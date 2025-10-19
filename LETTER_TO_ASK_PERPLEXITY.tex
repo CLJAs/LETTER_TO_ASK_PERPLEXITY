@@ -1,0 +1,72 @@
+\documentclass[notitlepage]{report}
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+
+
+\usepackage[english]{babel}
+%Para usar colores en las tablas:
+\usepackage{color}
+%\usepackage{graphicx} DUPLICADO
+\usepackage{epsfig}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage[table]{xcolor}
+%Fin de pacquetes para usar colores en las tablas
+
+
+\usepackage{titling}
+\usepackage{lipsum}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{pdfpages}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\setlength{\parskip}{2mm}
+\usepackage{graphicx}
+\graphicspath{ {../Imagenes/Editadas/} } 
+
+%Definiendo colores:
+\definecolor{lightgray}{gray}{0.9}
+\definecolor{myblue}{RGB}{180,241,231}
+\definecolor{myred}{RGB}{241,121,108}
+\definecolor{myyellow}{RGB}{245,239,122}
+%Fin de definicion de colores:
+
+
+\pretitle{\begin{center}\Huge\bfseries}
+	\posttitle{\par\end{center}\vskip 0.5em}
+\preauthor{\begin{center}\Large\ttfamily}
+	\postauthor{\end{center}}
+\predate{\par\large\centering}
+\postdate{\par}
+
+\title{Letter to Ask Perplexity} 
+\author{Me, My partner, and probably you... perplexity\\ THIS IS JUST A BEGINNING}
+\date{\today}
+
+
+\begin{document}
+	
+	\maketitle
+	\thispagestyle{empty}
+	
+	\input{Chapters/ABSTRACT/abstract.tex}
+		
+	\addtocontents{toc}{\hspace{-7.5mm} \textbf{Capítulos}}
+	\addtocontents{toc}{\hfill \textbf{P\'agina} \par}
+	\addtocontents{toc}{\vspace{-2mm} \hspace{-7.5mm} \hrule \par}
+	
+	\tableofcontents
+	
+	\part{Part I: The Letter}
+
+	\input{Chapters/CHAPTER01_Introduction/CHAPTER01_Introduction.tex}
+	%\input{Chapters/Chapter_01_Introduction/ENG_Chapter_01_Introduction.tex}
+	%\input{Chapters/Chapter_02_TheoremCA/ENG_Chapter_02_TheoremCA.tex}
+	
+	\part{Part II: Unnecessary comments}
+	
+	\input{Chapters/UNNECESSARY_COMMENTS/unnecessary_comments.tex}
+
+\end{document}
