@@ -1,0 +1,41 @@
+\chapter{GENERAL SCHEME ( Image )}
+
+	\section{Image}
+	
+		\begin{figure}[h]
+			\centering
+			%\includegraphics[ scale=0.7, angle=90]{EsquemaRelaciones}
+			\includegraphics[width=1\textwidth]{EsquemaRelacionesENGLISH}
+			\caption{Divide and Conquer strategy. Partitions and paths.}
+			\label{fig:gereral_scheme}
+		\end{figure}
+		
+		\newpage
+	
+	\section{Divide and Conquer strategy}
+	
+		\noindent
+		We will take some chapters to explain ALL that scheme.
+		\\\\
+		
+		\noindent
+		The general strategy begins with this idea:\\\\
+		$$ Card(A) \ngtr Card(B) \ngtr Card(C) \ngtr Card(D) \Longrightarrow Card(A) \ngtr Card(D)$$\\
+		$$ Card(Studied\_Set) \ngtr Card(Representations) \ngtr Card(LCF) \ngtr Card(\mathbb{N})$$\\
+		$$ Card(\mathcal{P}(\mathbb{N})) \ngtr Card(Symbol\_Of\_EmptySet \cup SNEFs \cup SNEIs) \ngtr Card(Previous \cup LCF) \ngtr Card(\mathbb{N})$$\\
+		$$ Card(\mathcal{P}(\mathbb{N})) \ngtr Card(\mathbb{N})$$
+		\\\\
+		
+		\noindent
+		To that basic idea we will add, the ``Divide and Conquer'' strategy. We will split each set involved into partitions, and after that we will reply the original transitive idea, to subsets of those partitions. We need to find transitive paths from all subsets of $\mathcal{P}(\mathbb{N})$ to UNIQUE subsets of $\mathbb{N}$. But we don't need to use ALL subsets of intermediate sets, or $\mathbb{N}$. We only need to not use the same subset in two different paths.
+		\\\\
+		
+		\noindent
+		Like I said before, Representations and LCF are related to the CLJA, just take them as they are. It will simplify this too much, and the properties we will use in the future, are independent from the CLJA.
+		\\\\
+		
+		\noindent
+		We will reduce the problem to $SNEIs$ subset vs $LCF_{2p}$ subset. And then, we will begin to create the system of relations, and the properties that let us build them. This could be considered a ``Branch and Bound'' technic too... we cut quickly branches to reduce the problem, and we will apply a new strategy (TPI, for you) to the survivor branches. But this is just stupid wordiness.
+		\\\\
+
+\newpage

@@ -24,7 +24,9 @@
 \usepackage[utf8]{inputenc}
 \setlength{\parskip}{2mm}
 \usepackage{graphicx}
-\graphicspath{ {../Imagenes/Editadas/} } 
+\graphicspath{ {Images/Edited/} }
+
+\usepackage{hyperref}
 
 %Definiendo colores:
 \definecolor{lightgray}{gray}{0.9}
@@ -58,12 +60,16 @@
 	\addtocontents{toc}{\vspace{-2mm} \hspace{-7.5mm} \hrule \par}
 	
 	\tableofcontents
+	\listoffigures
 	
 	\part{Part I: The Letter}
 
 	\input{Chapters/CHAPTER01_Introduction/CHAPTER01_Introduction.tex}
 	\input{Chapters/CHAPTER02_COMPLETE_RELATIONS/Chapter_02_Complete_Relations.tex}
 	\input{Chapters/CHAPTER03_NAIVE_CA_TH/Chapter_03_Naive_CA_Th.tex}
+	\input{Chapters/CHAPTER04_GENERAL_SCHEME/Chapter_04_General_Scheme.tex}
+	\input{Chapters/CHAPTER05_PN_PARTITION/Chapter_05_PN_Partition.tex}
+	\input{Chapters/CHAPTER06_REPRESENTATIONS_SET/Chapter_06_Representations_Set.tex}
 
 	\part{Part II: Unnecessary comments}
 	

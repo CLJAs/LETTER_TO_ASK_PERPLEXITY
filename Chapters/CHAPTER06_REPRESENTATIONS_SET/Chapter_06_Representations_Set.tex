@@ -1,0 +1,104 @@
+\chapter{Representations Set: SNEFs and SNEIs. Function SI.}
+
+	\section{SNEFs}
+		\begin{figure}[h!]
+			\centering
+			%\includegraphics[ scale=0.7, angle=90]{EsquemaRelaciones}
+			\includegraphics[width=0.8\textwidth]{SNEF_DEFINITION}
+			\caption{Origin of a SNEF. Only the ordered version works for us.}
+			\label{fig:snef_definition}
+		\end{figure}
+	
+		\noindent
+		For mathematicians, a set can be written in any possible order. And we want a positional representation.
+		\\\\
+		
+		\noindent
+		For the subsets of $\mathbb{N}$ with FINITE cardinality, we are going to use the representations called SNEFs ( Subset $\mathbb{N}$ Elements \textbf{FINITE} ). We begin with the ordered (from smallest to biggest) version of the set, and after that we convert it in a t-upla. Easy. For this example:\\
+		$\{2,4,6,8,10,12\}$\\
+		$ 2, 4, 6, 8, 10, 12$ \\
+		$(2, 4, 6, 8, 10, 12)$\\
+		The basic idea is very simple. THAT LAST t-upla, is the SNEF that represents the set.
+		\\\\
+		
+		\noindent
+		Two SNEFs are different when:\\
+		1) They have a different quantity of lambda ($\lambda$) labels/variables/symbols.\\
+		2) They don't have the same lamdbas, exactly, in the same positions.\\
+		\\\\
+		
+		\noindent
+		To talk about DISJOINT PACKs, we need to define the concept ``DIFFERENT''. Always the trick is going to be the same: even the most little detail becomes it in a different element.
+		\\\\
+		
+		\noindent
+		\textless ** \textit{See unnecesary comment 0009, About being DIFFERENT for  little details} \textgreater
+		
+	\section{Function SI for SNEFs}
+	
+		\noindent
+		This function receives a SNEF and returns the set of all its ``INITIAL SEQUENCES''. For our example:\\\\
+		$SNEF_{a}(\{10, 8, 2, 6, 12, 4\})= (2,4,6,8,10,12)$\\
+		$ SI ( SNEF_{a} ) = \{$\\
+		$(2)$,\\
+		$(2,4)$,\\
+		$(2,4,6)$,\\
+		$(2,4,6,8)$,\\
+		$(2,4,6,8,10)$,\\
+		$(2,4,6,8,10,12)$\\
+		$\}$
+		\\\\
+		
+	\section{SNEIs}
+	
+		\noindent
+		For subsets of $\mathbb{N}$ with INFINITE cardinality, whe have the set of representations called SNEIs (Subset $\mathbb{N}$ Elements \textbf{INFINITE} ). Exactly the same than SNEFs, but expanded for infinite t-uplas.
+		\\\\
+		
+		\noindent
+		Expanding SI for SNEIs is easy: we are going to obtain a set with infinite elements. Each one is going to be a FINITE initial sequence of the SNEI.
+		\\\\
+		
+		\noindent
+		To write an infinite t-upla is impossible for human beings. What we are going to do is to write ONLY the first elements that we needed to explain and show the future properties we are going to talk about. This requires some aclarations.
+		\\\\
+		
+		\noindent
+		1) We can differenciate a SNEF from a SNEI because the second one ends in "...", before closing parenthesis:\\
+		This is a SNEF: $(\lambda_{1}, \lambda_{2}, \lambda_{3})$\\
+		THIS is a SNEI: $(\lambda_{1}, \lambda_{2}, \lambda_{3}, ...)$\\
+		\\\\
+		
+		\noindent
+		2) A cropped version of a SNEI can represent multiple different sets. We will always be able to know about what sets we are talking about, for the context, or directly, the observation can be done in an independent way from the context. $(1,3,5,7,9,11,...)$ could represent ALL ODD NUMBERS $\{1,3,5,7,9,11,13,15...\}$, or $\{1,3,5,7,9,11,12,13,15, ...\}$... all odd numbers union $\{12\}$.
+		\\\\
+
+		\noindent
+		3) $(1,2,3,5,8,12,...)$ AND $(1,2,3,4,8,12,...)$\\
+		Represent different sets, absolutely for sure, and we only need a few initial elements to notice it: one has a 5, the other one has a 4, instead of a 5. Which sets exactly? Who knows?? But we are sure they are DIFFERENT.
+		\\\\
+		
+		\noindent
+		4) $(2,4,6,8,9,... **$ All even numbers bigger than 9$)$\\
+		THIS is an example about how we can try to explain HOW to build the rest of the infinite SNEI. We will put " ** " after " ... ", and after that, inside the parenthesis, we can put some text. We don't need to indicate their positions, WE KNOW they MUST appear ORDERED.
+		\\\\
+		
+	\section{Our first language}
+		
+		\noindent
+		In our first language, to represent all $\mathcal{P}(\mathbb{N})$, our alphabet is going to be ALL NATURAL NUMBERS. We will use each natural number, as if they were different symbols. AN ENTIRE natural number, is a label lambda.
+		\\\\
+		
+		\noindent
+		Our chains, our t-uplas of labels lambda, can have FINITE or INFINITE size. We will add one special symbol, as it were another chain. The symbol of the empty set: $\emptyset$.
+		\\\\
+		
+		\noindent
+		As we can see in the general scheme\footnote{Figure \ref{fig:gereral_scheme}}, we will split THIS new language, in three subsets:\\
+		1) The symbol of the emtpy set, alone\\
+		2) SNEFs\\
+		3) SNEIs\\
+		The light grey squares.
+		\\\\	
+		
+\newpage
