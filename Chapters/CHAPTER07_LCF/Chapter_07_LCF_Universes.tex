@@ -1,0 +1,205 @@
+\chapter{LCF and Universes $\theta_{k}$  }
+
+	\section{Initial concepts needed}
+		
+		\noindent
+		Before describing LCF, we need to know what is a CF. CF means Finite Path in spanish\footnote{Camino Finito}. Remember our deal, we will take them as they are, without asking WHY they have THAT CONCRETE SHAPE, and WITHOUT trying to rename them, or changing them.
+		\\\\
+		
+		\noindent
+		A CF is a t-upla of two terms. The left term is a SNEF, ALWAYS a SNEF. The right term is just a natural number, a DR value, that we put inside another t-upla of one member, to simplify the description of the bijection $\Omega$. In that way we keep all terms in the domain of t-uplas of natural numbers.
+		\\\\
+		
+		\noindent
+		Two CFs are DIFFERENT if:\\
+		1) Their SNEFs are different.\\
+		2) Their DR values are different.\\
+		Like I said, any little detail, being different, will create another new element.
+		\\\\
+			
+	\section{LCF and Previous}
+	
+		\noindent
+		Our second language is the union between LCF and Previous. Previous is the set for ``strange cases''. And it needs to be computable, in my case, in Python. It is an array of Strings. Each string try to describe the element, that is why we change the symbol of $\emptyset$ for the word "empty". Its cardanility needs to be always FINITE. In our case, is TWO. Correct.
+		\\\\
+		
+		\noindent
+		Following the example of the Infinite Hotel, we only need to move the rest of chains, as many rooms, as the cardinal of Previous.
+		\\\\
+		
+		\noindent
+		\textless ** \textit{See unnecesary comment 0010: you are not going to understand a shit, but you can see, if you search it, how we move the final natural number the cardinal of Previous in the FLJA formula related to CLJA-FTC. Just making space for weird cases.} \textgreater
+		\\\\
+		
+		\noindent
+		\textless ** \textit{See unnecesary comment 0011: about YvB} \textgreater
+		\\\\
+		
+		\noindent
+		LCF is defined as a list of one or two CFs. To be a CORRECT MEMBER of LCF, your last CF, always must have a DR value equal to ZERO, and the previous ones, if they exist, different from ZERO. Our LCF is like a chain of chains. A list of chains (CFs). For our concrete example, we only need LCF having one or two chains. Becoming a new type of FINITE chain.
+		\\
+		
+		\noindent
+		Two elements from LCF, are different if:\\
+		1) They have a different quantity of CFs inside.\\
+		2) They don't have the same CFs, in the same positions.\\
+		\\\\	
+	
+	\section{Second partition: $LCF_{1}$ and $LCF_{2}$ }
+		
+		\noindent
+		One member of LCF belongs to $CLF_{1}$ if it only has one CF inside its list.
+		\\\\
+		
+		\noindent
+		One member of LCF belongs to $LCF_{2}$ if it has TWO CFs inside its list.
+		\\\\
+		
+		\noindent
+		Like you have only two options, having one or two CFs... this defines perfectly a partition of all LCF.
+		\\\\
+		
+	
+	\section{Third partition: $LCF_{2c}$ and $LCF_{2p}$ }
+		
+		\noindent
+		Now we are going to create a partition over $LCF_{2}$.
+		\\\\
+		
+		\noindent
+		One element from $LCF_{2}$ belongs to $LCF_{2p}$ if (different tries of the same definition):\\\\
+		1) Both SNEFs, inside the two CFs, are initial sequences of one SNEI. No matter if you can find two different SNEIs, for whom you can find, the two SNEFs, are initial sequences of one, and the another. ONCE you can find a singular SNEI, and both SNEFs are initial sequences of it, THAT member belongs to $LCF_{2p}$.\\\\
+		2) If exists, at least, one $SNEI_{a}$, where both SNEFs, inside the two CFs, of the member of $LCF_{2}$, belong to $SI(SNEI_{a})$.
+		\\\\
+		
+		\noindent
+		In another case, it belongs to $LCF_{2c}$.
+		\\\\
+		
+		\noindent
+		The letter "p" comes from the word "practical": what we are going to use. The letter "c" is so old that I almost don't remember its meaning. C was always the letter I used for the leftover set. The discarded THIRD option. Third letter. You can see it like the COMPLEMENTARY of the PRACTICAL subset. It happened to me often in different old branches: having to split the solution in TWO, having useless elements too.
+		\\\\
+		
+		\noindent
+		EXAMPLES:\\\\
+		1)\\
+		$(  \:\:\:\:  ((1,2,3,4,5), (1)), \:\:\:\: ((1,2,3), (0))  \:\:\:\:)$\\
+		$(  \:\:\:\:  ((1,2,3), (1)), \:\:\:\: ((1,2,3,4,5), (0))  \:\:\:\:)$\\
+		Are different elements from $LCF_{2}$, but both belong to $LCF_{2p}$\\\\
+		2)\\
+		$(  \:\:\:\:  ((10, 1057), (1)), \:\:\:\: ((3,4,7,11,5030), (0))  \:\:\:\:)$\\
+		This element of $LCF_{2}$ belongs to $LCF_{2c}$. There is no possible way that those two SNEFs are inside the same SI(some SNEI).\\\\
+		3)\\
+		$(  \:\:\:\:  ((10, 1057, 1000002), (1)), \:\:\:\: ((10, 1057, 1000002), (0))  \:\:\:\:)$\\
+		This belongs to $LCF_{2p}$. If they are the same SNEF, they belong to the same SI().\\\\
+		4)\\
+		$(  \:\:\:\:  ((1,2,3,4,5,6,7,8,9,10,11,12), (1)), \:\:\:\: ((1,2,3,4,5,6,7,8,9,10,11,13), (0))  \:\:\:\:)$\\
+		Both SNEFs have a large initial sequence in common... but the last lambdas destroy our illusions. It belongs to $LCF_{2c}$.
+		\\\\
+		
+		\subsection{Compact notation}
+		
+			\noindent
+			So many parenthesis, are a pain in the ass. For rigor we need not lose sight of the formal definition: we are talking about t-uplas, inside t-uplas, inside t-uplas... but if we accept a less rigorous notation, all is more easy to the eye. I will rewrite each previous example in the compact notation, so you can take the idea. If you have doubts, the asnwer is ``NO SPACES IN BETWEEN'' :D.
+			\\\\
+			
+			\noindent
+			1)$(  \:\:\:\:  ((1,2,3,4,5), (1)), \:\:\:\: ((1,2,3), (0))  \:\:\:\:) \rightarrow  (\:\:\{1,2,3,4,5\}DR1,\:\: \{1,2,3\}DR0 \:\:)$\\\\
+			2)$(  \:\:\:\:  ((1,2,3), (1)), \:\:\:\: ((1,2,3,4,5), (0))  \:\:\:\:) \rightarrow  (\:\:\{1,2,3\}DR1,\:\: \{1,2,3,4,5\}DR0 \:\:)$\\\\
+			3)$(  \:\:\:\:  ((10, 1057), (1)), \:\:\:\: ((3,4,7,11,5030), (0))  \:\:\:\:) \rightarrow (\:\:\{10,1057\}DR1,\:\: \{3,4,7,11,5030\}DR0 \:\:)$\\\\
+			4)$(  \:\:\:\:  ((10, 1057, 1000002), (1)), \:\:\:\: ((10, 1057, 1000002), (0))  \:\:\:\:) \rightarrow (\:\:\{10,1057,1000002\}DR1,\:\: \{10,1057,1000002\}DR0 \:\:)$\\\\
+			5)$(  \:\:\:\:  ((1,2,3,4,5,6,7,8,9,10,11,12), (1)), \:\:\:\: ((1,2,3,4,5,6,7,8,9,10,11,13), (0))  \:\:\:\:) \rightarrow $\\
+			$(\:\:\{1,2,3,4,5,6,7,8,9,10,11,12\}DR1,\:\: \{1,2,3,4,5,6,7,8,9,10,11,13\}DR0 \:\:)$
+			\\\\
+			
+			\noindent
+			Imagine a CF like $((1,2,3,4,5), (0))$. We have a t-upla of a SNEFs and a DR value. To convert it into a correct member of $LCF_{1}$, we need to put it inside a LIST, with only one member:\\
+			From:\\
+			$((1,2,3,4,5), (0))$\\
+			To:\\
+			$(((1,2,3,4,5), (0)))$\\
+			This is more easy to read:\\
+			$(\:\:\{1,2,3,4,5\}DR0 \:\:)$
+			\\\\
+			
+			\noindent
+			We use the capital letters DR to separate the DR value, from the SNEF, but without spaces between the symbol of "end of set", and the DR letters, and the natural number that is the DR value. We change parenthesis for the symbols of set, to differentiate them, from the most extern parenthesis, that indicates "a list". What is inside is still a SNEF, their lambdas, must appear in order.
+			\\\\
+			
+			\noindent
+			If the context is not ambiguous, we can even forget the extern parenthesis:\\
+			THIS is more easy to read:\\
+			$\{10,1057\}DR1,\:\: \{3,4,7,11,5030\}DR0$\\
+			THAN:\\
+			$(((10, 1057), (1)), ((3,4,7,11,5030), (0)))$\\
+			If it is isolated in one single line.
+			\\\\
+			
+			\noindent
+			\textbf{BUT WE CAN NOT QUIT THE DR VALUES !! OKEY? THEY ARE SACRED.}
+			\\\\
+			
+			\noindent
+			DR values can be bigger than 1. And they are used in other cases, with "greater" (old style) alephs as cardinal. For a computer is easy to count parenthesis, but imagine now a set of chains of members of LCF. And a set of chains of the previous elements, as it they were symbols, lambdas, in a new alphabet, instead of chains. Lists, of lists, of lists, of members of LCF... better said: list of chains, of lists of chains, of lists of chains... it is madness. And this is not Sparta. One of my problems is finding a simple notation for cases bigger than $\aleph_{2}$.
+			\\\\
+			
+			\noindent
+			I am going to use, mostly, compact notation from now.
+			\\\\
+		
+	\section{Fourth partition: Universes $\theta_{k}$ }
+		
+		\noindent
+		This is not the last partition, but this is the last sub-partition of LCF. We are going to create it over $LCF_{2p}$.
+		\\\\
+		
+		\noindent
+		A member of $LCF_{2p}$, belongs to the Universe $\theta_{k}$, if it has, in the SNEF, inside the rightmost CF, EXACTLY, k lambdas inside.
+		\\\\
+		
+		\noindent
+		A member of $LCF_{2p}$ can not have two different quantities of lambdas, inside the SNEF, inside the rightmost CF. If that happens, they are different members of LCF, because two different quantities of Lambdas, means two different SNEFs; it means two different CFs in the same position; and it means two different members of LCF.
+		\\\\
+		
+		\noindent
+		We create a special symbol for the empty set. Not a singular SNEF, or a SNEI, tries to represent the empty set. So they always have, at least, one lambda inside. One element.
+		\\\\
+		
+		\noindent
+		Each SNEF has always a finite quantity of lambdas. "k" is always, a natural number, bigger than zero.
+		\\\\
+		
+		\noindent
+		We can split, ALL MEMBERS OF $LCF_{2p}$, into DISJOINT subsets, just focusing in how many lambdas has the rightmost SNEF. There is only, ONE possible number, per each element of $LCF_{2p}$, and all elements of $LCF_{2p}$ has a second SNEF.
+		\\\\
+		
+		\noindent
+		We are going to use previous examples, to show the classification:\\\\
+		1) $\{1,2,3,4,5\}DR1,\:\: \{1,2,3\}DR0$ \textrightarrow It belongs to $\theta_{3}$\\\\
+		2) $\{1,2,3\}DR1,\:\: \{1,2,3,4,5\}DR0$ \textrightarrow It belongs to $\theta_{5}$\\\\
+		3) $\{7,5,11,23\}DR1,\:\: \{7,5,11,23,42\}DR0$ \textrightarrow It belongs to $\theta_{5}$, too\\\\
+		4) $\{10,57\}DR1,\:\: \{3,4,7,11,5030\}DR0$ \textrightarrow It does not belong to any universe: it is not a member of $LCF_{2p}$\\\\
+		5) $\{1,2,3,4,5,6,7,8,9,10,11,12\}DR1, \:\: \{1\}DR0$ \textrightarrow It belongs to $\theta_{1}$\\\\
+		6) $\{1,2,3,4,5,6,7,8,9,10,11,12\}DR1, \:\: \{1,2,3,4,5,6,7,8,9,10,11,12\}DR0$ \textrightarrow It belongs to $\theta_{12}$\\\\
+		7) $\{1,2,3,4,5,6,7,8,9,10,11,12\}DR1, \:\: \{1,2,3,4,5,6,7,8,9,10,11,13\}DR0$ \textrightarrow It is not a member of $LCF_{2p}$, it is a member of $LCF_{2c}$\\\\
+		8) $(\:\:\{1,2,3,4,5\}DR0 \:\:)$ \textrightarrow It is not a member of $LCF_{2p}$, it is a member of $LCF_{1}$
+		\\\\
+		
+		\noindent
+		Ignoring almost completely, the leftmost CF, we can split $LCF_{2p}$ into $\aleph_{0}$, totally disjoint between them, different universes $\theta_{k}$.
+		\\\\
+	
+		\noindent
+		NOW you have, one of the points you asked me. Each relation $r_{\theta_{k}}$, is going to use, the universe $theta_{k}$ as Image set, and the entire set SNEIs, as its Domain set. Now you know what are the universes.
+		\\\\
+		
+		\noindent
+		You can easily imagine the bijections between the subsets, and paths in the general scheme \ref{fig:gereral_scheme}. BUT I need to write it. I am using your letter to do what I promised in an old document published in Vixra. So let me do it, the most perfectly, that I could. You can ignore the next two chapters, now you know EXACTLY what are the SNEIs, and what is $LCF_{2p}$, and universes $\theta_{k}$.
+		\\\\
+		
+		\noindent
+		The document is the definition of TPI. It is in spanish, but I guess it can be translated quickly with an AI. Is better to read first THIS document, and read it under your own risk :D. It is more easy to explain it in front of a blackboard, face to face. FOR ME. And you don't need it: you don't need the definition of TPI... you understood the meaning of the system of relations in our conversation. This is the link:\\
+		https://vixra.org/abs/2209.0120
+		\\\\
+
+\newpage

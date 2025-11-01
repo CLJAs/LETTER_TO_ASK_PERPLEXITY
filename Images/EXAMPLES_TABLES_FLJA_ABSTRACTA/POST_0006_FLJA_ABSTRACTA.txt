@@ -1,0 +1,247 @@
+TITLE
+POST VI: Abstract FLJA and R_theta_K. GAMMA vs R_THETA_K
+
+TEXT
+
+
+<The previous post is in this link:
+
+https://www.reddit.com/r/maths/comments/sejys7/post_v_do_you_let_me_do_this_multiverse_parallel/
+
+>
+
+
+
+Today we are gonna see what exactly is the ABSTRACT_FLJA, and how extract from it, each R_THETA_K. I am going to put some images... from my works in spanish, but I think they can be understood easily.
+
+
+
+
+
+ABSTRACT_FLJA, in spanish is written: "flja_abstracta"
+
+
+
+And like I have changed a concept, for these posts, because I think is more easy to understand.. when you read:
+
+"PACK (Infinito) en Theta_n", with the new change, in english, means, "INFINITE PACK assigned by R_THETA_N".
+
+
+
+
+
+Our goal is going to be able, to assign, to each member of SNEIs, an infinite PACK of members of LCF_2p. And try to make ALL PACKS disjoint between them. From now... this is going to be the center of many many ideas and consequences.
+
+
+
+I am going to explain this from the perspective of relations being sets. Per each snei that belongs to SNEIs, we are gonna create this list/set of members of LCF_2p:
+
+
+
+r/maths - POST VI: Abstract FLJA and R_theta_K. GAMMA vs R_THETA_K
+Set ABSTRACT_FLJA_PRIME
+
+All Lambdas subindex begins in 1. Lambda_0 is a universal constant JUST for the concrete case of CLJA_FTC. Lambda_0 is not part of SNEFs or SNEIs.
+
+With each member of THAT list, for THAT snei, we are going to create pairs like this:
+
+(snei, lcf1)
+
+(snei, lcf2)
+
+...
+
+Always the same SNEI, and lcfs, are members of the list you can see in the image. This is a set of pairs. THIS SET OF PAIRS, is the set ABSTRACT_FLJA_PRIME ( for that snei).
+
+
+
+Quick explanation: Cartessian product of, SI(snei) X SI (snei). Transform ALL pairs into members of LCF_2p, adding DR values in the right way, keeping the order in the t-upla. And after that, create pairs with that snei and each member of LCF_2p created in that way. SI(snei) only contains FINITE Initial Sequences.
+
+
+
+THIS is the real reason of the condition to be a member of LCF_2p: both CFs of the member of LCF, has SNEFs that are Initial Sequences of the same snei.
+
+
+
+Do it per each member of SNEIs. Create an infinite union with ALL sets ABSTRACT_FLJA_PRIME of each snei.
+
+
+
+THAT IS THE SET ABSTRACT_FLJA, that is also a relation none-aplication.
+
+
+
+Now we are gonna create a partition of ABSTRACT_FLJA. As you can see in the image, members of LCF_2p are ordered by universes.
+
+
+
+*Universes names begins in 1.
+
+R_THETA_1: all pairs from ABSTRACT_FLJA that has a member of LCF_2p of the universe THETA_1.
+
+R_THETA_2: all pairs from ABSTRACT_FLJA that has a member of LCF_2p of the universe THETA_2.
+
+R_THETA_3: all pairs from ABSTRACT_FLJA that has a member of LCF_2p of the universe THETA_3.
+
+...
+
+R_THETA_K: all pairs from ABSTRACT_FLJA that has a member of LCF_2p of the universe THETA_K.
+
+...
+
+and so on... We are going to obtain infinite relations R_THETA_K.
+
+
+
+This create a perfect partition of ABSTRACT_FLJA.. and each subset R_THETA_K is a relation too. A none-aplication relation where each SNEI are going to be related with an infinite PACK. I have NOT say these PACKS are disjoint. BUT in each R_THETA_K, each snei has an infinite PACK.
+
+LIKE all R_THETA_Ks are created just using the members of each universe THETA, and all universes THETA are disjoint between them:
+
+
+
+1)PACKS are going to be disjoint between universes. Between relations R_THETA_K.
+
+2)Each SNEI has a different infinite PACK in each R_THETA_K. All disjoint between them.
+
+3)Infinite PACKS, with infinite elements, per each possible SNEI. One per each R_THETA_K.
+
+4)WE HAVEN'T SAY YET, "ALL" PACKS are going to be disjoint...
+
+
+
+Some examples for a few different sneis:
+
+
+
+r/maths - POST VI: Abstract FLJA and R_theta_K. GAMMA vs R_THETA_K
+Even natural numbers greater than zero: SNEI_evens
+
+
+
+
+
+r/maths - POST VI: Abstract FLJA and R_theta_K. GAMMA vs R_THETA_K
+Odd natural numbers greater than zero: SNEI_odds
+
+
+
+
+
+r/maths - POST VI: Abstract FLJA and R_theta_K. GAMMA vs R_THETA_K
+{2, 4, 6} U {Odd natural numbers greater than 6}: SNEI_merge
+
+*Thanks htmlcolorcodes for the rgb codes to create the tables in Latex!!
+
+**I checked it several times, but I usually get confused using terms "odds and evens". If you see something strange, it is just an error of translation :D.
+
+
+
+If you observe carefully... you will be able to see that "SNEI_evens" and "SNEI_odds" has a gamma value of ZERO... and curiously, they don't have a singular member of LCF_2p, in common, in any of its PACKs, in any R_THETA_K. Each column has the members of the same universe, so each column is the pack of the R_THETA_K that uses that universe, for THAT concrete snei.
+
+
+
+From R_THETA_1, they always have disjoint PACKs...
+
+
+
+BUT "SNEI_ evens" and "SNEI_merge" has some members in common, in some PACKs...
+
+r/maths - POST VI: Abstract FLJA and R_theta_K. GAMMA vs R_THETA_K
+See how ( {2,4,6}DR1, {2,4,6}DR0 ) is in both sneis in R_THETA_3
+
+
+
+And we have said: "disjoint PACKs"... not "partially" disjoint PACKS :D... If you quit three elements, from each PACK with infinite members, you still have PACKS, with infinite members, and now they are disjoint... BUT I WANT THEM, to be disjoint, FROM THE FIRST MEMBER OF EACH PACK. With absolutely no members in common. There is not a good reason for this election... I have too many options, and I must decide for one. One reason was knowing always which is going to be "the first" member of the disjoint PACK. The first.
+
+
+
+So look carefully now... "SNEI_evens" and "SNEI_merge" has a gamma value of 3. See how from R_THETA_4 they don't have a singular member in common inside their PACKS:
+
+
+
+r/maths - POST VI: Abstract FLJA and R_theta_K. GAMMA vs R_THETA_K
+From R_THETA_4
+
+WHY???
+
+R_THETA_4 is made with the members of THETA_4. They have members with 4 lambdas in their second CF, ALWAYS.
+
+So every CF_2 has enough lambdas to have the "First different lambda" between them. Because they have gamma value 3... what means the first different lambda is in 4th position (beginning in 1).
+
+
+
+This "trick" is going to work for EVERY POSSIBLE pair of sneis, with gamma value equal to 3 or less... In R_THETA_4 they are gonna have disjoint pack, and in every R_THETA_K with
+
+
+
+K = (gamma_value + 1) or greater.
+
+
+
+The second CF is always to have enough lambdas to have the first different lambda... BUT JUST for pairs of sneis with a gamma value equal to K-1, or less. Observed pair by pair... in each pair... they are gonna be disjoint.
+
+
+
+From R_THETA_4: R_THETA_5, R_THETA_6... and so on... are going to have enough lambdas in the second CF, in each member of LCF_2p, to have the position of the first different lambda. And no matter how many lambdas do you have... If only one is different... they will be considered different members of LCF, and Omega is going to relate them to different natural numbers.
+
+
+
+General rule:
+
+1)Every R_THETA_K is able to offer disjoint PACKS, for every possible pair of sneis with gamma value equal to k-1 or less. (from the first member of LCF_2p selected by R_THETA_K to those sneis).
+
+*Those Packs are going always to be the same per each snei, inside R_THETA_K, and they are gonna be disjoint ONLY if we ask for the pairs that has those gamma values.
+
+
+
+2)Every possible pair of sneis, with gamma value = K-1, is going to be "solved" in R_THETA_K, and R_THETA_Ks with a greater K than that.
+
+
+
+3)Every possible pair of sneis has infinite relations, R_THETA_K, where it is "solved", because every possible pair has a gamma value that belongs to N. And that value is unique per each possible pair of sneis. No matter the order.
+
+GAMMA (SNEI_a, SNEI_b) = GAMMA(SNEI_b, SNEI_a)
+
+Because the first different lambda is in the same position in both. And they are ordered.
+
+
+
+
+
+REMEMBER: To check if we could assign disjoint PACKs to each possible snei... we just need to study all possible pairs of sneis... every R_THETA_K is better that all the previous R_THETAs... but none of them are able to offer a "totally" disjoint solution... because when the gamma values of pairs begins to be greater that its K subindex... members in common begins to appear. Just a finite quantity of them... at the beginning of each pack... but we have defined our goal: We need them to be disjoint from the first.
+
+
+
+No matter if we study disjoint property pair by pair... if we "could do it" for ALL possible pairs... it will means all PACKS are disjoint between them. No matter the cardinality of SNEIs. THIS is our goal... is we reach it or not... it is not important... I have doubts about it... ME... but the travel to reach that goal makes me discover the three numeric phenomena.
+
+
+
+
+
+DO YOU REMEMBER THE CASE GAMMA VALUE = infinity???
+
+It only happens if the pair is made of two copies of the same SNEI. Like we want packs to be disjoint... it does not matter if we assign the same PACKS, to the same snei.
+
+
+
+FROM R_THETA_1... that case is totally irrelevant... Or we can say that, from R_THETA_1, gamma values = infinity, are solved.
+
+
+
+This makes gamma = 0 and gamma = infinity, different, but equivalent cases. They have a solution from R_THETA_1.
+
+
+
+This makes impossible to "expand" the reasonning to "infinity" in case someone is tempted to ask what happens when gamma "tends" to infinity, or if it is infinity. So we are "traped" in cases of gamma that are all "finite values". :D.
+
+
+
+We can study infinite finite cases... but the concrete case, when gamma is infinity itself... is irrelevant.
+
+
+
+ENOUGH FOR TODAY!!
+
+
+
+In the next posts we are going to begin a strange travel, across various posts, that could seem useless, because we are gonna end studying pairs of sneis again. But I have a good reason... it is needed to show how diagonalizations and this technic, has the same strengths and the same weaknesses. And to show the first numeric phenomena.

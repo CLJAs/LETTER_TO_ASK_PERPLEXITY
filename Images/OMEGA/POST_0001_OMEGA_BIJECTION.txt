@@ -1,0 +1,75 @@
+TITTLE: 
+POST I: A little first step into Constructions LJA. Omega Bijection.
+
+TEXT:
+
+<Like I am not used to post... I will post little pieces of my work. If someone wanted to follow the whole process, just go to my account and look for my posts. The last ones would be the series of posts about my work.>
+
+If we "could" build the next serie of "facts":
+
+|A| not bigger than |B| not bigger than |C| not bigger than |D|
+
+We could say: |A| is not bigger than |D|
+
+A concrete Construction LJA, is an abstract data structure that helps us to create THAT serie of "facts" and intermediate "sets", in a particular example, between two different sets. Mostly between N being "D", and another set being "A". B uses to be a set of "representations", designed for THAT case. And "C" uses to be what we are going to call "Lists of finite paths" (LCF: 'Lista de Caminos Finitos' in spanish), designed for that concrete case too.
+
+The data structure helps us, as a nemothecnic tool, to create the relations and the sets involved in them. The frustating stuff is once you have designed the relations, that helps you to prove in each step:
+
+|I| is not biggert than |J|
+
+You don't need the data structure anymore: evrything works fine... but seems very strange. But it works, if we take definitions as they are. We don't understand WHY the sets are the way they are, or why relations works so fine. The only way to understand all, is talking about the concrete example of CLJA we used to design each step and set, for that coparison of sets.
+
+If we change the set "A"... we need to redesign everything. It would be another "concrete example", but the technic is always very very similar.
+
+Like once a guy tried to publish a work with the same subject as mine... and he didn't publish formulas, let me publish in this post formulas, written in python, and some results, between the set LCF and N, for the comparison between P(N) and N.
+
+PLEASE: realize THIS a step of many... it is just "a piece" of all the work... and LCF is a set that you won't understand. Probably, the formula is impossible to understand just with the code. Let me put some links, and finally I will explain, a little, members of LCF.
+
+This is the code in python of the bijection Omega: LCF -> N. It has the inverse function too... and it is not using prime numbers. In code, Omega Bijection is called "flja" (Function LJA).
+
+https://github.com/CLJAs/clja-ftc
+
+These are results created with that code. The firsts 300 millions pairs of that bijection. 
+https://drive.google.com/file/d/1kcEdhZn-UwNz5cLEZI9QyhqfzAV4mim3/view?usp=sharing
+https://drive.google.com/file/d/1EfJib9Vokcz6CAU4UBJxYfC9y1oZQMsJ/view?usp=sharing
+https://drive.google.com/file/d/1nAXuF6oK42TXiprn-nEDLB36Q56dMP2Z/view?usp=sharing
+Each entry follows this:
+
+The natural number -> Member of LCF   [ok!]
+
+We make a "for", for each natural number, using the inverse function to transform it into a member of LCF. After that, we pass that member to the direct function, to obtain a natural number. If both are equal, things "seems" to work fine. Then is when "ok" appears. If you think twice, it is not a perfect test, but it is a HARD test.
+
+To understand fully why THIS is a bijection, we need to talk about the CLJA-FTC... and that is a large explanation.
+
+Another funny thing is that THIS is not the limit of CLJAs. P(N) is not complex enough to make CLJAs technic put all his capabilities into the work. 
+
+To finish this post, let me try to explain members of LCF (for this case P(N) vs N):
+
+One snef that belongs to 'SNEFs': Is a "representation", ORDERED, from left to right, from the smaller to the greater, of a "Subset of N with a Finite quantity of Elements" (SNEF: "Subconjunto de N con una cantidad de Elementos Finita", in spanish).
+
+We will use t-uplas, to put very clear that the "position", is important, so:
+
+{13, 7, 5, 21}  -> SNEF representation of this subset would be: (5, 7, 13, 21). Okey?
+
+A Finite Path, or CF ("Camino Finito", in spanish), is a t-upla of a SNEF and a DR value:
+
+( (SNEF), (DR_value))
+
+For example: (  (5, 7 , 13, 21), (1) )
+
+Like it has too many parenthesis, an alternative way to write a CF is:
+{5,7,13,21}DR1
+
+LCF members, are lists of one OR two CFs. Just that. You will not understand right now what is a DR_value, for this example we can talk about them as constants.
+
+In case the list has just ONE CF: the DR value of the CF,  MUST be 0
+
+In case the list has TWO CFs: the DR_Value in the left CF MUST BE 1, and the DR_value in the right CF MUST BE zero.
+
+In another case it is an invalid member of LCF.
+
+Really are like zeros to the left of a natural number... every CF beyond the CF with DR_value=0 are going to be ignored in the list.
+
+TAKE this post, as a "proof" about the bijection between LCF and N, "could" exists... waiting for a larger explanation in the future... because in the next posts I am going to talk LIKE "if" that bijection exists.
+
+THANKS FOR YOU TIME, I will se you in the next post.
