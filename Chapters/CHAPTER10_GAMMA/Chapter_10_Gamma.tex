@@ -1,4 +1,109 @@
 \chapter{Level of conflict $\gamma$ between a pair of SNEIs}
 
 	\noindent
-	POSESO
+	Let there be two different SNEIs:\\\\
+	$SNEI_{a} = (\lambda_{1}, \lambda_{2}, \lambda_{3}, .. \:,$ \textbf{$\lambda_{i}$} $, .. \: , \lambda_{m-1}, \lambda_{m}, \lambda_{m+1}, ...)$\\\\
+	$SNEI_{b} = (\beta_{1}, \beta_{2}, \beta_{3}, .. \:,$ \textbf{$\beta_{i}$} $, .. \:, \beta_{m-1},\beta_{m}, \beta_{m+1},...)$
+	\\\\
+	
+	\noindent
+	Being "i" the FIRST position from the left where symbols are DIFFERENT;\\\\
+	OR\\\\
+	The smallest subindex "i" where $\lambda_{i} \neq \beta_{i}$:\\\\
+	$\gamma(SNEI_{a}, SNEI_{b}) = \gamma(SNEI_{b}, SNEI_{a}) = i - 1$
+	\\\\
+	
+	\noindent
+	IF I haven't said it: $\lambda_{0} = -1$ is a constant for every SNEF and every SNEI. We never write it. So for us all lambdas begin in the position $i=1$.
+	\\\\
+	
+	\noindent
+	To see WHY lambdas begins in $i=1$:\\
+	\textless ** \textit{See unnecesary comment 0012, why lambdas begins in $i=1$} \textgreater
+	\\\\
+	
+	\noindent
+	$\gamma$ belongs to $\mathbb{N}$, including ZERO. IF two SNEIs begin having the first symbols different, their gamma value is zero:\\
+	$ \gamma(SNEIa, SNEIb)= 0 $ when $\lambda_{1} \neq \beta_{1}$
+	\\\\
+	
+	\noindent
+	For every possible pair of SNEIs, for every possible D-pair, where the SNEIs are different, $gamma$ ALWAYS exists, and it is FINITE. No matter the possible combinatorics of SNEIs in pairs; no matter the cardinal of all those possible pairs: FINITE and natural. If they are different, the first different symbol MUST BE in some place. And that place is a finite position.
+	\\\\
+	
+	\noindent
+	The \textbf{\textit{stupid}} and \textbf{\textit{unnecesary}} detail of becoming it into an ordered t-upla begins to have sense: we begin to project what others could call $\aleph_{1}$ into a space of finite NATURAL values.
+	\\\\
+	
+	\noindent
+	Why we call it "Level of conflict"? Because our problem will be how much similar they are. In a CLJA, the more different elements are, the better :D. Our problems get worst, when elements begin to be more and more similar. The more similar, the greater is the CONFLICT. The sooner we found the difference, the sooner we relieve ourself.
+	\\\\
+	
+	\noindent
+	See how we ignore the rest of the SNEIs. We focus JUST in the first different symbol. The rest can be the same symbols or different symbols: WE DON'T CARE. Imagine this case:\\
+	$SNEI_{a} = (2,4,6,8,10,12,14,$ ... ** all even numbers$)$\\
+	$SNEI_{b} = (1,2,4,6,8,10,12,14,$ ... ** all even numbers union $\{1\})$\\
+	$\gamma(SNEI_{a}, SNEI_{b})=0$, WITHOUT MERCY
+	\\\\
+	
+	
+	\subsection {Alternative definition of level of conflict $\gamma$}
+	
+		\noindent
+		$\gamma(SNEI_{a}, SNEI_{b})=$ the size of the greatest t-upla inside $ (\:\: SI(SNEI_{a}) \cap SI(SNEI_{b} \:\:)$.
+		\\\\
+		
+		\noindent
+		The size of the greatest Initial Sequence they have in common.
+		\\\\
+		
+		\noindent
+		This is WHY we quit 1 to i: this is the original idea. :D. Why is it usefull?
+		\\\\
+	\subsection {What happens when two SNEIs inside a D-pair are the same?}
+	
+		\noindent
+		In that case $\gamma(SNEI_{a},SNEI_{a})=\gamma(SNEI_{b}, SNEI_{b})=\infty$.
+		\\\\
+		
+		\noindent
+		We don't have a maximum value... their SI functions return EXACTLY the same Initial Sequences. There is always a greater Initial Sequence, in common, to any possible case we could choose.
+		\\\\
+		
+		\noindent
+		\textit{THE FIRST DIFFERENT SYMBOL, is in an infinite position :D. This a weird way of seeing it, that is why it is more easy to understand with this alternative definition. We use two, because depending in the case, using one or another make things more CLEAR.}
+		\\\\
+		
+		\noindent
+		The $\gamma$ level of conflict grows and grows in difficulty to be solved... but when we extend it to $\infty$... it becomes the easier case for the Naive CA Theorem: if they are the same element, they can have EXACTLY the same image:\\
+		$f(a)=f(b) \leftrightarrow a = b $\\
+		This is INSIDE the core of the definition of injectivity.
+		\\\\
+		
+		\noindent
+		"They" don't need disjoint PACKs.
+		\\\\
+		
+		\noindent
+		The order of difficulty to be solved for $\gamma$ is:\\
+		$ \gamma =\infty$,\\ 
+		$ \gamma=0$,\\
+		$ \gamma=1$,\\ 
+		$ \gamma=2$,\\
+		$ ... $
+		\\\\
+		 
+		\noindent
+		To see a curious phenomenom about mathematicians extending finite cases to infinity:\\
+		\textless ** \textit{See unnecesary comment 0013, extending finite cases to infinity ($\gamma$)} \textgreater
+		\\\\
+		
+		\noindent
+		To talk quickly about the UNNECESSARY (here) concept of GROUPS OF STUDY:\\
+		\textless ** \textit{See unnecesary comment 0014, Groups of study ($\gamma$)} \textgreater
+		\\\\
+	
+	 
+	
+	
+	
