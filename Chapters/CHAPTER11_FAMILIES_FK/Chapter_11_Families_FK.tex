@@ -1,4 +1,110 @@
 \chapter{Partition of $(SNEIs\:\:X\:\:SNEIs)$: Families $F_{\gamma}$}
 
 	\noindent
-	FUAAAHHH X 2
+	When we study the injectivity of a function, we need to be sure all images are different. One way of doing it is studying all (DOMAIN X DOMAIN) in the function. Pair by pair, isolated, we must always find different images assigned to each member of the pair.
+	\\\\
+	
+	\noindent
+	When we play Naive CA theorem, we do the same, we study all D-pairs from the relation. Now we need DISJOINT PACKs instead of different images. I don't know WHY but this breaks the brain of a lot of intelligent people. So I need to clarify one thing. Imagine that we need to have disjoint packs for all SNEIs, and we say we can use only two natural numbers ( WE STUDY all D-pairs isolated, hahahahaha ). In each D-pair, to the left we assing 17, and to the right we assign 5019. If we have three SNEIs, let's see three different possible D-pairs in a very simple and tricky relation:\\\\
+	$(SNEI_{a}, SNEI_{b}):$\\
+	Having the pairs inside the relation: $(SNEI_{a}, 17,) \:\:AND\:\: (SNEI_{b}, 5019)$\\\\
+	$(SNEI_{c}, SNEI_{a}):$\\
+	Having the pairs inside the relation: $(SNEI_{c}, 17,) \:\:AND\:\: (SNEI_{a}, 5019)$\\\\
+	$(SNEI_{b}, SNEI_{c}):$\\
+	Having the pairs inside the relation: $(SNEI_{b}, 17,) \:\:AND\:\: (SNEI_{c}, 5019)$\\\\
+	This configuration creates the three PACKs for each SNEI from the Domain:\\
+	$Pack(SNEI_{a}) = \{17,5019\}$\\
+	$Pack(SNEI_{b}) = \{17,5019\}$\\
+	$Pack(SNEI_{c}) = \{17,5019\}$\\
+	THEY ARE NOT DISJOINT. If we assign natural numbers to SNEIs, thinking that like we are studying D-pairs isolated, it is a tricky situation... well... it will be NOT. Assigning naturals to SNEIs means adding R-pairs to the relation. It means THE IMAGE SET of that SNEIs is going to grow, creating more opportunities to don't let us find, or reduce it, to disjoint PACKs. Overall if we reuse natural numbers for different SNEIS: IT WILL CREATE some D-pair with repeated elements from natural numbers, inside their PACKs.
+	\\\\
+	
+	\noindent
+	Now, KNOWING it is no so easy to create proper conditions for the Naive CA Theorem, we will focus into studying the problem focusing just in ALL POSSIBLE COMBINATIONS OF D-Pairs. ALL D-pairs with disjoint PACKs, means each member of SNEIs have a set of unique, exclusive natural numbers: that will be our goal.
+	\\\\
+	
+	\noindent
+	No matter the possible quantity of combinations of D-pairs for all SNEIs. Thanks to the property $\gamma$ we can create a partition of ( SNEIs  X SNEIs ). Each D-pair, has a unique value of $\gamma$. Classifying all D-pairs by their $\gamma$ values, we define $\aleph_{0}$ different disjoint (between them) subsets of (SNEIs X SNEIs):\\\\
+	$F_{\infty}:$ All those D-pairs with $\gamma$ value equal to $\infty$. When they are the same. Easiest case.\\
+	$F_{0}:$ All those D-pairs where $\gamma = 0$. \\
+	$F_{1}:$ All those D-pairs where $\gamma = 1$. \\ 
+	$F_{2}:$ All those D-pairs where $\gamma = 2$. \\
+	$F_{3}:$ All those D-pairs where $\gamma = 3$. \\
+	... \\
+	And so on... ONLY $\aleph_{0}$ disjoint subsets inside the partition.
+	\\\\
+	
+	\noindent
+	We will call this new subsets: \textbf{\textit{FAMILIES OF D-PAIRS}}
+	\\\\
+	
+	
+	\section{Which is the cardinal of each Family?}
+	
+		\noindent
+		This is the first piece of the Egg of Columbus, the PHASE 1, creates and solves.
+		\\\\
+		
+		\noindent
+		Families are chaotic. So much, that many mathematicians were not able to realize their cardinals. You can say whatever you want: I am talking from REPEATED personal experience.
+		\\\\
+		
+		\noindent
+		\textbf{The Family $F_{\infty}$}, has as many pairs inside, as the totallity of members of SNEIs: so it "should" has cardinal $\aleph_{1}$, or worst, FOR YOU.
+		\\\\
+		
+		\noindent
+		\textbf{For Family $F_{0}$}. Imagine this two SNEIs; $(1, ...)$ and $(2, ...)$.\\
+		Now Imagine all posible subsets of, $\mathbb{N}$ minus $\{0,1,2\}$, with infinite cardinal. They are still $\aleph_{1}$ combinations or worst.
+		\\\\
+		
+		\noindent
+		\textit{LET ME IGNORE FROM HERE THE CONTINUUM HYPOTHESIS. We are going to solve it definitely, and it is stupid to say all the time $\aleph_{1}$ or worst. FROM NOW, we will say "just" $\aleph_{1}$, and it will imply "for you", too.}
+		\\\\
+		
+		\noindent
+		Like all those combinations are made by natural numbers bigger than 2, we can put each one TWICE, in the "..." section of each SNEI, and we will create TWO different SNEIs with $\gamma = 0 $. AND THAT ONLY, for all D-pairs that begins with 1 and 2. Only with that initial state, we have $\aleph_{1}$ different D-pairs. $F_{0}$ has cardinal $\aleph_{1}$, for sure.
+		\\\\
+		
+		\noindent
+		\textbf{For Families $F_{k}, k\geq1$}. In all these Families, we are going to be able to choose a particular example, of concrete natural numbers:\\
+		$SNEI_{a} = (\lambda_{1}, \lambda_{2}, \lambda_{3}, ... , \lambda_{k-1}, \lambda_{k}, \lambda_{k+1}, ...)$\\
+		$SNEI_{b} = (\beta_{1}, \beta_{2}, \beta_{3}, ... , \beta_{k-1}, \beta_{k}, \beta_{k+1}, ...)$\\
+		Where all labels are equal, and the first different ones are going to be $\lambda_{k+1}$ and $\beta_{k+1}$\\
+		\\\\
+		
+		\noindent
+		We can always talk about all subsets, with infinite cardinal, of all natural numbers, bigger than $max(\lambda_{k+1},\beta_{k+1})$. $\lambda_{k+1}$ and $\beta_{k+1}$ are always to be, both, much smaller than the infinite, no matter how big they could be. And we will always have infinite natural numbers bigger than the maximum of both. So the combinations are always $\aleph_{1}$, IN ALL FAMILIES. We can found combinations of particular cases that reach that cardinal. The rest of combinations only can mantain the cardinal, or making it bigger. Are irrelevant for our observation that ALL FAMILIES have a cardinal, FOR YOU, bigger than $\aleph_{0}$.
+		\\\\
+	
+	\section {Sumarizing before continuing}
+	
+		\noindent
+		Now we know:\\
+		1) What is SNEIs.\\
+		2) What is $LCF_{2p}$.\\
+		3) Reduced the problem to them. \\
+		4) We know that we have $\aleph_{0}$ different universes $\theta_{k}$, and that each one has cardinal $\aleph_{0}$. \\
+		5) We have $\aleph_{0}$ different Families, $F_{k}$, of D-pairs, having each one, cardinal $\aleph_{1}$.
+		\\\\
+		
+		\noindent
+		Families are chaotic. They are not related to isolated elements of the Domain. I mean: in one Family we don't have all possible D-pairs where a particular element from SNEIs, appears. BUT, Families are a partition of all D-pairs. We have clasified ALL D-pairs, but DISORDERED with respect to the elements of the Domain. Between all this chaos, an extraordinary property will arise: Families are solvable. Entirely solvable. Each one. Without forget any singular D-pair. But we need patience.
+		\\\\
+		
+		\noindent
+		When we say we are going "to solve" the Family, $F_{k-1}$, using only the universe $\theta_{k}$, people always overreact, ONLY if they are able to see quickly the cardinal of the Families. First step of the Egg of Columbus. The first step, of our FIRST mathematically impossible, intermediate point, from THREE. People OFTEN say THAT is MATHEMATICALLY IMPOSSIBLE hahahahahaha.
+		\\\\
+		
+		\noindent
+		They ignore we are going to do something EVEN WORST... we are going to solve Families $F_{\infty}$, $F_{0}$, $F_{1}$, ..., $F_{k-1}$, using ONLY the universe $\theta_{k}$. Inside the relation $r_{\theta_{k}}$. "Solve" means all those D-pairs are going to have disjoint PACKs. ALL. But we still ignore what is a $r_{\theta_{k}}$ relation.
+		\\\\
+		
+		
+		
+		
+				
+		
+		
+	
+	
