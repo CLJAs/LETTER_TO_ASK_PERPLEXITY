@@ -110,13 +110,57 @@
 		\end{center}
 	\end{table}
 	
+	\newpage
 	\noindent
-		TEXTO REGLAS EXPLICAIONES
+	A relation is a set of pairs. So we can define how to build the relation, explaining how to create ALL pairs that are going to end inside the relation.
 	\\\\
 	
+	\noindent
+	For each SNEI, it is like Flja\_abstract ( SNEI ) =... but instead a fórmula, what you do algorithmically, is create one R-pair per each lcf in that previous table, and add all them INSIDE the set that defines the relation:\\\\
+	FLJA\_ABSTRACT(SNEI) $\dashrightarrow$ PRODUCES  $\dashrightarrow$\\
+	\{\\
+		\indent ("That SNEI", $(\{\lambda_{1}\}DR1,\:\{\lambda_{1}\}DR0)$), \\
+		\indent ("That SNEI", $(\{\lambda_{1}, \lambda_{2}, \lambda_{3}, \lambda_{4}, \lambda_{5}\}DR1,\:\{\lambda_{1}, \lambda_{2}\}DR0)$),\\
+		\indent ... and so on, per each lcf that belongs to $LCF_{2p}$ inside that table ...\\	
+	\}	
+	\\\\
+	
+	\noindent
+	You put ALL THOSE R-PAIRS, inside the relation (inside the set) Flja\_Abstract. Repeat it for each possible SNEI... NOW you have the complete relation well defined: we have explained how to create ALL the R-pairs of the relation. No more, no less.
+	\\\\
+	
+	\noindent
+	Each table is the Image set ( defined in the second chapter of this document ) of each SNEI. The table is ALL its images, ordered by universes.
+	\\\\
+	
+	\noindent
+	All R-pairs created are different:\\
+	1) The table fits the construction ( SI(SNEI) X SI(SNEI) ), but with each element adapted to be a legal element of $LCF_{2p}$. All possible combinations, ALL different. An infinite quantity per each SNEI.\\
+	2) In the right we could "repeat" some lcfs, but in the left of the R-pair, we are going to have different SNEIs when that happens.
+	\\\\
+	
+	\noindent
+	We need to see:\\
+	1) All columns are infinite, but I need to put "..." to add more columns, below previous ones, to fit the table to the page.\\
+	2) We have ordered lcfs by universes... in each column we have only elements coming from the same universe.\\
+	3) In one column, we don't have THE ENTIRE universe. We only have all lcfs, related to THAT SNEI, in THAT UNIVERSE, in the Flja\_Abstract relation.\\
+	4) Each SNEI have got related, lcfs from ALL universes... $\aleph_{0}$ from each universe, in $\aleph_{0}$ different universes. It could seem $\aleph_{0}^{2}$ different lcfs: $\aleph_{0}$ x $\aleph_{0}$. But we all now it is the same than only $\aleph_{0}$. 
+	\\\\
+	
+	\noindent
+	All clear now? Let's write some examples of different tables for a few concrete SNEIs. We will use them as examples in the future, too.
+	\\\\
+	
+	\noindent
+	\textit{FORGET that "r" in each "$r_{\theta_{k}}$" column tittle... just focus in the name of each universe $\theta_{k}$. We will talk about that "r" later.}
+	\\\\
+	
+	
+	
+		
 	\newpage
 	%****************************************************************************************************************************************************
-	% TABLA DE SNEIS PARES (odd):
+	% TABLA DE SNEIS PARES (even):
 	%****************************************************************************************************************************************************
 	\begin{table}[h!]
 		\begin{center}
@@ -216,6 +260,214 @@
 		\end{center}
 	\end{table}
 
+	\newpage
+	%****************************************************************************************************************************************************
+	% TABLA DE SNEIS IMPARES (odd):
+	%****************************************************************************************************************************************************
+	\begin{table}[h!]
+		\begin{center}
+			%\begin{turn}{270}
+			\begin{tabular}{|l||l|}
+				\hline
+					\multicolumn{2}{|c|}{\cellcolor{bosunired}  } \\
+					\multicolumn{2}{|c|}{\cellcolor{bosunired} {\huge $SNEI_{odds} = (1, 3, 5, 7, 9, ...**$} odd numbers greater than 9    {\huge $)$}  }\\
+					\multicolumn{2}{|c|}{\cellcolor{bosunired}  } \\
+				\hline
+				\hline
+					\cellcolor{bosunired!50} & \cellcolor{bosunired!50}  \\
+					\cellcolor{bosunired!50} {\LARGE $r_{\theta_{1}}$:  } & \cellcolor{bosunired!50} {\LARGE $r_{\theta_{2}}$:  } \\
+					\cellcolor{bosunired!50} & \cellcolor{bosunired!50}  \\
+				\hline
+				\hline
+					$\{1\}DR1,\:\{1\}DR0$ &
+					$\{1\}DR1,\:\{1, 3\}DR0$ \\
+				%\hline
+					$\{1, 3\}DR1,\:\{1\}DR0$ &
+					$\{1, 3\}DR1,\:\{1, 3\}DR0$ \\
+				%\hline
+					$\{1, 3, 5\}DR1,\:\{1\}DR0$ &
+					$\{1, 3, 5\}DR1,\:\{1, 3\}DR0$ \\
+				%\hline
+					$\{1, 3, 5, 7\}DR1,\:\{1\}DR0$ &
+					$\{1, 3, 5, 7\}DR1,\:\{1, 3\}DR0$ \\
+				%\hline
+					$\{1, 3, 5, 7, 9\}DR1,\:\{1\}DR0$ &
+					$\{1, 3, 5, 7, 9\}DR1,\:\{1, 3\}DR0$ \\
+				%\hline
+					... & ... \\
+				%\hline
+					$\{1, 3, 5, ... , (2n-1)\}DR1,\:\{1\}DR0$ &
+					$\{1, 3, 5, ... , (2n-1)\}DR1,\:\{1, 3\}DR0$ \\				
+				%\hline
+					... & ... \\						
+				\hline
+				\hline
+					\cellcolor{bosunired!50} & \cellcolor{bosunired!50}  \\
+					\cellcolor{bosunired!50} {\LARGE $r_{\theta_{3}}$:  } & \cellcolor{bosunired!50} {\LARGE $r_{\theta_{4}}$:  } \\
+					\cellcolor{bosunired!50} & \cellcolor{bosunired!50}  \\
+				\hline
+				\hline
+					$\{1\}DR1,\:\{1, 3, 5\}DR0$ &
+					$\{1\}DR1,\:\{1, 3, 5, 7\}DR0$ \\
+				%\hline
+					$\{1, 3\}DR1,\:\{1, 3, 5\}DR0$ &
+					$\{1, 3\}DR1,\:\{1, 3, 5, 7\}DR0$ \\
+				%\hline
+					$\{1, 3, 5\}DR1,\:\{1, 3, 5\}DR0$ &
+					$\{1, 3, 5\}DR1,\:\{1, 3, 5, 7\}DR0$ \\
+				%\hline
+					$\{1, 3, 5, 7\}DR1,\:\{1, 3, 5\}DR0$ &
+					$\{1, 3, 5, 7\}DR1,\:\{1, 3, 5, 7\}DR0$ \\
+				%\hline
+					$\{1, 3, 5, 7, 9\}DR1,\:\{1, 3, 5\}DR0$ &
+					$\{1, 3, 5, 7, 9\}DR1,\:\{1, 3, 5, 7\}DR0$ \\
+				%\hline
+					... & ... \\
+				%\hline
+					$\{1, 3, 5, ... , (2n-1)\}DR1,\:\{1, 3, 5\}DR0$ &
+					$\{1, 3, 5, ... , (2n-1)\}DR1,\:\{1, 3, 5, 7\}DR0$ \\
+				%\hline
+					... & ... \\				
+				\hline
+				\hline
+					\cellcolor{bosunired!50} & \cellcolor{bosunired!50}  \\
+					\cellcolor{bosunired!50} {\LARGE $r_{\theta_{5}}$:  } & \cellcolor{bosunired!50}... {\LARGE $r_{\theta_{k}}$:  } \\
+					\cellcolor{bosunired!50} & \cellcolor{bosunired!50}  \\
+				\hline
+				\hline
+					$\{1\}DR1,\:\{1, 3, 5, 7, 9\}DR0$ &
+					$\{1\}DR1,\:\{1, ... , (2k-1)\}DR0$ \\
+				%\hline
+					$\{1, 3\}DR1,\:\{1, 3, 5, 7, 9\}DR0$ &
+					$\{1, 3\}DR1,\:\{1, ... , (2k-1)\}DR0$ \\
+				%\hline
+					$\{1, 3, 5\}DR1,\:\{1, 3, 5, 7, 9\}DR0$ &
+					$\{1, 3, 5\}DR1,\:\{1, ... , (2k-1)\}DR0$ \\
+				%\hline
+					$\{1, 3, 5, 7\}DR1,\:\{1, 3, 5, 7, 9\}DR0$ &
+					$\{1, 3, 5, 7\}DR1,\:\{1, ... , (2k-1)\}DR0$ \\
+				%\hline
+					$\{1, 3, 5, 7, 9\}DR1,\:\{1, 3, 5, 7, 9\}DR0$ &
+					$\{1, 3, 5, 7, 9\}DR1,\:\{1, ... , (2k-1)\}DR0$ \\
+				... & ... \\
+				%\hline
+					$\{1, 3, 5, ... , \lambda_{n}\}DR1,\:\{1, 3, 5, 7, 9\}DR0$ &
+					$\{1, ... , (2n-1)\}DR1,\:\{1, ... , (2k-1)\}DR0$ \\
+				... & ... \\
+				\hline
+			\end{tabular}
+			\caption{FLJA Abstract Odd Numbers}
+			\label{tab:flja_snei_odds}
+			%\end{turn}
+		\end{center}
+	\end{table}
 
+	\newpage
+	%****************************************************************************************************************************************************
+	% TABLA DE SNEIS MERGE (odd):
+	%****************************************************************************************************************************************************
+		\begin{table}[h!]
+		\begin{center}
+			%\begin{turn}{270}
+			\begin{tabular}{|l||l|}
+				\hline
+					\multicolumn{2}{|c|}{\cellcolor{brightlavender}  } \\
+					\multicolumn{2}{|c|}{\cellcolor{brightlavender} {\huge $SNEI_{merge} = (0, 2, 4, 7, 9, ...**$} odd numbers greater than 9    {\huge $)$}  }\\
+					\multicolumn{2}{|c|}{\cellcolor{brightlavender}  } \\
+				\hline
+				\hline
+					\cellcolor{brightlavender!50} & \cellcolor{brightlavender!50}  \\
+					\cellcolor{brightlavender!50} {\LARGE $r_{\theta_{1}}$:  } & \cellcolor{brightlavender!50} {\LARGE $r_{\theta_{2}}$:  } \\
+					\cellcolor{brightlavender!50} & \cellcolor{brightlavender!50}  \\
+				\hline
+				\hline
+					$\{0\}DR1,\:\{0\}DR0$ &
+					$\{0\}DR1,\:\{0, 2\}DR0$ \\
+				%\hline
+					$\{0, 2\}DR1,\:\{0\}DR0$ &
+					$\{0, 2\}DR1,\:\{0, 2\}DR0$ \\
+				%\hline
+					$\{0, 2, 4\}DR1,\:\{0\}DR0$ &
+					$\{0, 2, 4\}DR1,\:\{0, 2\}DR0$ \\
+				%\hline
+					$\{0, 2, 4, 7\}DR1,\:\{0\}DR0$ &
+					$\{0, 2, 4, 7\}DR1,\:\{0, 2\}DR0$ \\
+				%\hline
+					$\{0, 2, 4, 7, 9\}DR1,\:\{0\}DR0$ &
+					$\{0, 2, 4, 7, 9\}DR1,\:\{0, 2\}DR0$ \\
+				%\hline
+					... & ... \\
+				%\hline
+					$\{0, 2, 4, ... , (2n-1)\}DR1,\:\{0\}DR0$ &
+					$\{0, 2, 4, ... , (2n-1)\}DR1,\:\{0, 2\}DR0$ \\				
+				%\hline
+					... & ... \\						
+				\hline
+				\hline
+					\cellcolor{brightlavender!50} & \cellcolor{brightlavender!50}  \\
+					\cellcolor{brightlavender!50} {\LARGE $r_{\theta_{3}}$:  } & \cellcolor{brightlavender!50} {\LARGE $r_{\theta_{4}}$:  } \\
+					\cellcolor{brightlavender!50} & \cellcolor{brightlavender!50}  \\
+				\hline
+				\hline
+					$\{0\}DR1,\:\{0, 2, 4\}DR0$ &
+					$\{0\}DR1,\:\{0, 2, 4, 7\}DR0$ \\
+				%\hline
+					$\{0, 2\}DR1,\:\{0, 2, 4\}DR0$ &
+					$\{0, 2\}DR1,\:\{0, 2, 4, 7\}DR0$ \\
+				%\hline
+					$\{0, 2, 4\}DR1,\:\{0, 2, 4\}DR0$ &
+					$\{0, 2, 4\}DR1,\:\{0, 2, 4, 7\}DR0$ \\
+				%\hline
+					$\{0, 2, 4, 7\}DR1,\:\{0, 2, 4\}DR0$ &
+					$\{0, 2, 4, 7\}DR1,\:\{0, 2, 4, 7\}DR0$ \\
+				%\hline
+					$\{0, 2, 4, 7, 9\}DR1,\:\{0, 2, 4\}DR0$ &
+					$\{0, 2, 4, 7, 9\}DR1,\:\{0, 2, 4, 7\}DR0$ \\
+				%\hline
+					... & ... \\
+				%\hline
+					$\{0, 2, 4, ... , (2n-1)\}DR1,\:\{0, 2, 4\}DR0$ &
+					$\{0, 2, 4, ... , (2n-1)\}DR1,\:\{0, 2, 4, 7\}DR0$ \\
+				%\hline
+					... & ... \\				
+				\hline
+				\hline
+					\cellcolor{brightlavender!50} & \cellcolor{brightlavender!50}  \\
+					\cellcolor{brightlavender!50} {\LARGE $r_{\theta_{5}}$:  } & \cellcolor{brightlavender!50}... {\LARGE $r_{\theta_{k}}$:  } \\
+					\cellcolor{brightlavender!50} & \cellcolor{brightlavender!50}  \\
+				\hline
+				\hline
+					$\{0\}DR1,\:\{0, 2, 4, 7, 9\}DR0$ &
+					$\{0\}DR1,\:\{0, ... , (2k-1)\}DR0$ \\
+				%\hline
+					$\{0, 2\}DR1,\:\{0, 2, 4, 7, 9\}DR0$ &
+					$\{0, 2\}DR1,\:\{0, ... , (2k-1)\}DR0$ \\
+				%\hline
+					$\{0, 2, 4\}DR1,\:\{0, 2, 4, 7, 9\}DR0$ &
+					$\{0, 2, 4\}DR1,\:\{0, ... , (2k-1)\}DR0$ \\
+				%\hline
+					$\{0, 2, 4, 7\}DR1,\:\{0, 2, 4, 7, 9\}DR0$ &
+					$\{0, 2, 4, 7\}DR1,\:\{0, ... , (2k-1)\}DR0$ \\
+				%\hline
+					$\{0, 2, 4, 7, 9\}DR1,\:\{0, 2, 4, 7, 9\}DR0$ &
+					$\{0, 2, 4, 7, 9\}DR1,\:\{0, ... , (2k-1)\}DR0$ \\
+				%\hline
+					... & ... \\
+				%\hline
+					$\{0, 2, 4, ... , (2n-1)\}DR1,\:\{0, 2, 4, 7, 9\}DR0$ &
+					$\{0, ... , (2n-1)\}DR1,\:\{0, ... , (2k-1)\}DR0$ \\
+				%\hline
+					... & ... \\
+				\hline
+			\end{tabular}
+			\caption{FLJA Abstract SNEI merge}
+			\label{tab:flja_snei_merge}
+			%\end{turn}
+		\end{center}
+	\end{table}
+	
+	\noindent
+	\textit{We mantain the general term of odd numbers, because in each column we have more than three lcfs, and after that zone, they are all odd numbers in their normal positions.}
+	\\\\
 	
 	
