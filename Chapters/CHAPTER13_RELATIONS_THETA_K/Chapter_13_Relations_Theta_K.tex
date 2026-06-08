@@ -15,7 +15,7 @@
 	\\\\
 	
 	\noindent
-	Flja\_Abstract relation associates, in each column, to each SNEI, $\aleph_{0}$ lcfs. And we we have $\aleph_{0}$ columns. We could call this THE MEGAPACK.
+	Flja\_Abstract relation associates, in each column, to each SNEI, $\aleph_{0}$ lcfs. And we have $\aleph_{0}$ columns. We could call this THE MEGAPACK.
 	\\\\
 	
 	\noindent
@@ -27,6 +27,131 @@
 	Uses ALL SNEIs as Domain, but only the universe $\theta_{k}$ as the set where it obtains, all PACKs for the SNEIs, from. INSIDE that concrete $r_{\theta_{k}}$. All universes $\theta_{k}$ are disjoint between them, so the same R-pair is NOT in two $r_{\theta_{k}}$ at the same time. Defining Flja\_Abstract, we have defined, IN ONE STEP, all the infinite list of different relations $r_{\theta_{k}}$.
 	\\\\
 	
+	%\noindent
+	%\textless ** \textit{See unnecesary comment 0015, for some examples if needed} \textgreater
+	%\\\\
+	
+	\newpage
+	
+	\section{Examples of $r_{\theta_{k}}$}
+	
 	\noindent
-	\textless ** \textit{See unnecesary comment 0015, for some examples if needed} \textgreater
+	$SNEI_{evens}= ( 0, 2, 4, 6, 8,..,110, 112, 114, 116, 118, ...**$ All even numbers greater than 118 $)$\\\\
+	
+	\noindent
+	$r_{\theta_{50}} ( SNEI_{evens} )  => \{$
+	\begin{align*}
+		(&\{0\}DR1,	                 &\{0, 2, 4, 6, .. , 94, 96, 98\}DR0), \\
+		(&\{0,2\}DR1,	             &\{0, 2, 4, 6, .. , 94, 96, 98\}DR0), \\
+		(&\{0,2,4\}DR1,	             &\{0, 2, 4, 6, .. , 94, 96, 98\}DR0), \\
+		 &...                        &...                                  \\
+		(&\{0,2,4,.., 2n\}DR1,	     &\{0, 2, 4, 6, .. , 94, 96, 98\}DR0), \\	 
+		 &...                        &...                                  		  
+	\end{align*}
+	$\}$\\
+	* n: index of row, beginning in 0\\\\
+	
+	\noindent
+	Why I used an arrow an not an equal? FOR ME is more clear to explain the relations algorithmitically. The image of $SNEI_{evens}$ is NOT that set of members of $LCF_{2p}$. If it were the case, we would only create ONE R-Pair inside $r_{\theta_{50}}$. In the left of the t-upla, we would have got the snei: $SNEI_{evens}$, and in the right of the R-Pair, we would have the complete set of lcfs from the paragraph above. THAT IS COMPLETELY INCORRECT !!.
 	\\\\
+	
+	\noindent
+	What we do is creating one R-Pair, FOR EACH lcf in that list. In all them, in the left, we put the same snei, and in the right, we put a different lcf from that list/coulumn. Generating this set of R-Pairs:
+	\\\\
+	
+	\noindent
+	$r_{\theta_{50}} ( SNEI_{evens} )  = \{$
+	\begin{align*}
+		(\:\:& SNEI_{evens}\:\:,      \:\:\:\:\:\:\:\:(\{0\}DR1,	             &\{0, 2, 4, 6, .. , 94, 96, 98\}DR0)\:\:), \\
+		(\:\:& SNEI_{evens}\:\:,      \:\:\:\:\:\:\:\:(\{0,2\}DR1,	             &\{0, 2, 4, 6, .. , 94, 96, 98\}DR0)\:\:), \\
+		(\:\:& SNEI_{evens}\:\:,      \:\:\:\:\:\:\:\:(\{0,2,4\}DR1,	         &\{0, 2, 4, 6, .. , 94, 96, 98\}DR0)\:\:), \\
+		(\:\:& SNEI_{evens}\:\:,      \:\:\:\:\:\:\:\:(...                       &... )\:\:),                               \\
+		(\:\:& SNEI_{evens}\:\:,      \:\:\:\:\:\:\:\:(\{0,2,4,.., 2n\}DR1,      &\{0, 2, 4, 6, .. , 94, 96, 98\}DR0)\:\:), \\	 
+		(\:\:& SNEI_{evens}\:\:,      \:\:\:\:\:\:\:\:(...                       &... )\:\:)                                 		  
+	\end{align*}
+	$\}$\\
+	\\\\
+	
+	\newpage
+	
+	\noindent
+	The relation is build by the union of all those sets of R-pairs generated, using each possible snei:\\\\
+	\[ r_{\theta_{50}} = \bigcup_{s \:\: \in \:\: SNEIs}^{} r_{\theta_{50}}(s) \] \\
+	\\\\
+	
+	\noindent
+	What we obtain is a set that only contains R-Pairs... a mathematical relation:\\
+	$$ r_{\theta_{50}}: SNEIs \rightarrow \theta_{50} $$
+	\\\\
+	
+	\noindent
+	Like it could be confusing, you can create two different relations, one prime-r and simple r:\\\\
+	$r'_{\theta_{50}}: SNEIs \rightarrow P(SNEIs \:\:X\:\: \theta_{50})$ \\\\
+	* Per each snei we obtain a subset of that cartessian product. An element of the potence set of that cartessian product. A set of R-Pairs\\\\
+	AND\\
+	$$r_{\theta_{50}}: SNEIs \rightarrow \theta_{50}$$
+	\[ r_{\theta_{50}} = \bigcup_{s \:\: \in \:\: SNEIs}^{} r'_{\theta_{50}}(s) \] \\
+	* A relation that is not a function, that has multiple R-Pairs, with the same snei, in their left side. But in the first chapters of this document we already have covered that concept, defining the concepts "Image set of the element from the Domain (ISED)" and "PACK".
+	\\\\
+	
+	\noindent
+	We have created a set of R-pairs. But it is weird to talk about $r_{\theta_{50}}(SNEI_{evens})$, because the result is not the set of all images, related to $SNEI_{evens}$, itself, or the set of all R-Pairs. I don't know how to describe it. For a programmer is very easy. The concept "Image set(ISED)" or "PACK" do not need to solve that problem, they are based over the reallity of the set of R-Pairs.
+	\\\\
+	
+	\noindent
+	"\textbf{\textit{But you are using the potence set!!}}":\\
+	No problem, like each subset selected for PACKs needs to be disjoint with the rest of the PACKs, in reallity all PACKs are not the potence set, but a partition of one possible subset of the Image set from the relation.
+	\\\\
+	
+	\noindent
+	"\textbf{\textit{BUT you can not describe $r_{\theta_{50}}(snei)$ !!}}":\\
+	I don't need it for Naive CA Th.
+	\\\\
+	
+	\noindent
+	REMEMBER: the goal is to find a subrelation INSIDE the relation... a subset of R-Pairs that acomplish the premises of Naive CA Th. We already knew we weren't going to work with functions from the beginning of the document.
+	
+	\newpage
+	\section{A global vision until now}
+	
+	\noindent
+	$r'_{\theta_{k}}: SNEIs \rightarrow P(SNEIs \:\:X\:\: \theta_{k})$ \\
+	$r'_{\theta_{k}} ( s \in SNEIs )  = \{$
+	\begin{align*}
+		(\:\:& s\:\:,   \:\:\:\:\:(\{\lambda_{1}  \}DR1,	                          &\{ \lambda_{1}, .. , \lambda_{k} \}DR0)\:\:), \\
+		(\:\:& s\:\:,   \:\:\:\:\:(\{\lambda_{1},\lambda_{2}  \}DR1,	              &\{ \lambda_{1}, .. , \lambda_{k} \}DR0)\:\:), \\
+		(\:\:& s\:\:,   \:\:\:\:\:(\{\lambda_{1},\lambda_{2},\lambda_{3}  \}DR1,	  &\{ \lambda_{1}, .. , \lambda_{k} \}DR0)\:\:), \\
+		(\:\:& s\:\:,   \:\:\:\:\:(...                                                &... )\:\:),                               \\
+		(\:\:& s\:\:,   \:\:\:\:\:(\{\lambda_{1}, .. , \lambda{n}  \}DR1,             &\{ \lambda_{1}, .. , \lambda_{k} \}DR0)\:\:), \\	 
+		(\:\:& s\:\:,   \:\:\:\:\:(...                                                &... )\:\:)                                 		  
+	\end{align*}
+	$\}$ * n: index of the row beginning in 1\\
+	\\\\
+	
+	\noindent
+	$$r_{\theta_{k}}: SNEIs \rightarrow \theta_{k}$$
+	\[ r_{\theta_{k}} = \bigcup_{s \:\: \in \:\: SNEIs}^{} r'_{\theta_{k}}(s) \] \\
+	\\\\
+	
+	\noindent
+	$$ FLJA\_abstract: SNEIs \rightarrow LCF_{2p} $$
+	\[ FLJA\_abstract = \bigcup_{k=1}^{\infty} r_{\theta_{k}} \:\:\:\:\:\: k \in \mathbb{N} \]
+	\\\\
+	
+	\noindent
+	We have reduced all the problem to $SNEIs$ vs $LCF_{2p}$. So we don't need more details, or remember more. Just in case:\\
+	1) Universes $\theta_{k}$ are a  partition of $LCF_{2p}$.\\
+	2) THE FUNCTION $\Omega$ or FLJA\_practical, is a bijection between ALL LCF and $\mathbb{N}$.\\
+	3) SNEIs has the same cardinal than $\mathcal{P}(\mathbb{N})$.\\
+	4) Relations (not functions) $r_{\theta_{k}}$ are a partition of FLJA\_abstract.\\
+	\\\\
+	
+	\noindent
+	In each relation $r_{\theta_{k}}$ each snei receives infinite ($\aleph_{0}$) natural numbers ( if we use the function $\Omega$ ). In FLJA\_abstract that is only a SUBPACK of the MEGAPACK each snei receives ( one subpack per each relation $r_{\theta_{k}}$ merged): $\aleph_{0}^{2}$, that in reallity is only a "quantity" equal to $\aleph_{0}$, but in the future we will need to remember they are not the same.
+	\\\\
+	
+	\noindent
+	"\textbf{\textit{But that solution has a lot of repetitions and PACKS are not disjoint}}": Do you read me worried about that ? We are near the first magical point.
+	\\\\
+	
+	
