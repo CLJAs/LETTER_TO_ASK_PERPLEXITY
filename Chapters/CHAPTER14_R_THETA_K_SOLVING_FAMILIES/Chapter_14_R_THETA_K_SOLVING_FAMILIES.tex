@@ -1,4 +1,357 @@
 \chapter{Relation $r_{\theta_{k}}$ solving all Families $F_{\infty}, F_{0}, .. , F_{k-1}$}
 
 	\noindent
-	TEST TEXT 
+	In this chapter we begin to use all previous concepts, together, be sure you know where to consult each one. Overall tables of relations $r_{\theta_{k}}$. You need to remember WHEN two lcfs are "different". AND, you need to know well the $\gamma$ value of a D-pair.
+	\\\\
+	
+	\noindent
+	Let's watch the first relation of the system: $r_{\theta_{1}}$
+	\\\\
+	
+	\begin{table}[h!]
+		\begin{center}
+			%\begin{turn}{270}
+			\begin{tabular}{|l||l|}
+				\hline
+				\multicolumn{2}{|c|}{\cellcolor{lightgray} {$r_{\theta_{1}}$ EVENs vs ODDs } } \\
+				\hline
+				$SNEI_{evens} = (0,2,4,6,8,10,12,...)$ & $ SNEI_{odds} = (1,3,5,7,9,11,13,...)$   \\
+				\hline
+				\hline
+				$ ( \{0\}DR1, \{0\}DR0 ) $ & $ ( \{1\}DR1, \{1\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2\}DR1, \{0\}DR0 ) $ & $ ( \{1,3\}DR1, \{1\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2,4\}DR1, \{0\}DR0 ) $ & $ ( \{1,3,5\}DR1, \{1\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2,4,6\}DR1, \{0\}DR0 ) $ & $ ( \{1,3,5,7\}DR1, \{1\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2,4,6,8\}DR1, \{0\}DR0 ) $ & $ ( \{1,3,5,7,9\}DR1, \{1\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2,4,6,8,10\}DR1, \{0\}DR0 ) $ & $ ( \{1,3,5,7,9,11\}DR1, \{1\}DR0 ) $ \\
+				\hline
+				... & ... \\
+				\hline
+				$ (\{0,2,4,.., 2(n-1)\}DR1, \{0\}DR0 )$ & $ (\{1,3,5,.., ((2n)-1) \}DR1, \{1\}DR0 )$ \\
+				\hline
+				... & ... \\
+				\hline
+				
+			\end{tabular}
+			\caption{$r_{\theta_{1}}$  ODDS vs EVENS}
+			\label{tab: r_theta_1_odds_vs_evens}
+			%\end{turn}
+		\end{center}
+	\end{table}
+	\noindent
+	*n: index of the row beginning in 1.
+	\\\\
+	
+	\noindent
+	$\gamma(SNEI_{evens}, SNEI_{odds}) = \gamma(SNEI_{odds}, SNEI_{evens}) = 0 $
+	\\\\
+	
+	\noindent
+	They do not have any element in common. All the lcfs, that are generated, are all different. For this concrete D-pair, PACKS generated are completely DISJOINT in $r_{\theta_{1}}$.
+	\\\\
+	
+	\newpage
+	
+	\noindent
+	Now let's observe $r_{\theta_{1}}$ for Merged vs Odds:
+	\\\\
+	
+	\begin{table}[h!]
+		\begin{center}
+			%\begin{turn}{270}
+			\begin{tabular}{|l||l|}
+				\hline
+				\multicolumn{2}{|c|}{\cellcolor{lightgray} {$r_{\theta_{1}}$ MERGEDs vs ODDs } } \\
+				\hline
+				$SNEI_{merged} = (0,2,4,7,9,11,13,...)$ & $ SNEI_{odds} = (1,3,5,7,9,11,13,...)$   \\
+				\hline
+				\hline
+				$ ( \{0\}DR1, \{0\}DR0 ) $ & $ ( \{1\}DR1, \{1\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2\}DR1, \{0\}DR0 ) $ & $ ( \{1,3\}DR1, \{1\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2,4\}DR1, \{0\}DR0 ) $ & $ ( \{1,3,5\}DR1, \{1\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2,4,7\}DR1, \{0\}DR0 ) $ & $ ( \{1,3,5,7\}DR1, \{1\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2,4,7,9\}DR1, \{0\}DR0 ) $ & $ ( \{1,3,5,7,9\}DR1, \{1\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2,4,7,9,11\}DR1, \{0\}DR0 ) $ & $ ( \{1,3,5,7,9,11\}DR1, \{1\}DR0 ) $ \\
+				\hline
+				... & ... \\
+				\hline
+				$ (\{0,2,4,7,9,.., ((2n)-1)\}DR1, \{0\}DR0 )$ & $ (\{1,3,5,.., ((2n)-1) \}DR1, \{1\}DR0 )$ \\
+				\hline
+				... & ... \\
+				\hline
+				
+			\end{tabular}
+			\caption{$r_{\theta_{1}}$  MERGED vs ODDS}
+			\label{tab: r_theta_1_merged_vs_odds}
+			%\end{turn}
+		\end{center}
+	\end{table}
+	
+	\noindent
+	*n: index of the row beginning in 1.
+	\\\\
+	
+	\noindent
+	$\gamma(SNEI_{merged}, SNEI_{odds}) = \gamma(SNEI_{odds}, SNEI_{merged}) = 0 $
+	\\\\
+	
+	\noindent
+	$SNEI_{merged}$ and $SNEI_{evens}$ have infinite elements in common, even in the same positions, but they generate all lcfs in $r_{\theta_{1}}$ totally DISJOINT !!
+	\\\\
+	
+	\newpage
+	
+	\noindent
+	Let's observe now the D-pair ($SNEI_{merged}$, $SNEI_{evens}$) in $r_{\theta_{1}}$:
+	\\\\
+	
+	\begin{table}[h!]
+		\begin{center}
+			%\begin{turn}{270}
+			\begin{tabular}{|l||l|}
+				\hline
+				\multicolumn{2}{|c|}{\cellcolor{lightgray} {$r_{\theta_{1}}$ MERGEDs vs EVENs } } \\
+				\hline
+				$SNEI_{merged} = (0,2,4,7,9,11,13,...)$ & $ SNEI_{evens} = (0,2,4,6,8,10,12,...)$   \\
+				\hline
+				\hline
+				\cellcolor{bosunired!50}  $ ( \{0\}DR1, \{0\}DR0 ) $        & \cellcolor{bosunired!50}  $ ( \{0\}DR1, \{0\}DR0 ) $ \\
+				\hline
+				\cellcolor{bosunired!50}  $ ( \{0,2\}DR1, \{0\}DR0 ) $      & \cellcolor{bosunired!50}  $ ( \{0,2\}DR1, \{0\}DR0 ) $ \\
+				\hline
+				\cellcolor{bosunired!50}  $ ( \{0,2,4\}DR1, \{0\}DR0 ) $    & \cellcolor{bosunired!50}  $ ( \{0,2,4\}DR1, \{0\}DR0 ) $ \\
+				\hline
+				\cellcolor{applegreen!50} $ ( \{0,2,4,7\}DR1, \{0\}DR0 ) $  & \cellcolor{applegreen!50} $ ( \{0,2,4,6\}DR1, \{0\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2,4,7,9\}DR1, \{0\}DR0 ) $ & $ ( \{0,2,4,6,8\}DR1, \{0\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2,4,7,9,11\}DR1, \{0\}DR0 ) $ & $ ( \{0,2,4,6,8,10\}DR1, \{0\}DR0 ) $ \\
+				\hline
+				... & ... \\
+				\hline
+				$ (\{0,2,4,7,9,.., ((2n)-1)\}DR1, \{0\}DR0 )$ & $ (\{0,2,4,.., 2(n-1) \}DR1, \{0\}DR0 )$ \\
+				\hline
+				... & ... \\
+				\hline
+				
+			\end{tabular}
+			\caption{$r_{\theta_{1}}$  MERGED vs EVENS}
+			\label{tab: r_theta_1_merged_vs_evens}
+			%\end{turn}
+		\end{center}
+	\end{table}
+
+	\noindent
+	*n: index of the row beginning in 1.
+	\\\\
+	
+	\noindent
+	$\gamma(SNEI_{merged}, SNEI_{evens}) = \gamma(SNEI_{evens}, SNEI_{merged}) = 3 $
+	\\\\
+	
+	\noindent
+	Generated PACKs in $r_{\theta_{1}}$, for THIS concrete D-pair, are NOT DISJOINT, they have THREE elements in common. From the fourth row, they begin again to be different lcfs.
+	\\\\
+	
+	\noindent
+	$r_{\theta_{1}}$, as it is, does not generate ALL PACKs being disjoint. We could cut the three first lcfs... and we will obtain infinite disjoint lcfs... buy wait, there is a simplier and more elegant way to do that.
+	\\\\
+	
+	\newpage
+	
+	\noindent
+	Let's see the same D-pair in $r_{\theta_{2}}$ and $r_{\theta_{3}}$:
+	\\\\
+	
+	\begin{table}[h!]
+		\begin{center}
+			%\begin{turn}{270}
+			\begin{tabular}{|l||l|}
+				\hline
+				\multicolumn{2}{|c|}{\cellcolor{lightgray} {$r_{\theta_{2}}$ MERGEDs vs EVENs } } \\
+				\hline
+				$SNEI_{merged} = (0,2,4,7,9,11,13,...)$ & $ SNEI_{evens} = (0,2,4,6,8,10,12,...)$   \\
+				\hline
+				\hline
+				\cellcolor{bosunired!50}  $ ( \{0\}DR1, \{0,2\}DR0 ) $        & \cellcolor{bosunired!50}  $ ( \{0\}DR1, \{0,2\}DR0 ) $ \\
+				\hline
+				\cellcolor{bosunired!50}  $ ( \{0,2\}DR1, \{0,2\}DR0 ) $      & \cellcolor{bosunired!50}  $ ( \{0,2\}DR1, \{0,2\}DR0 ) $ \\
+				\hline
+				\cellcolor{bosunired!50}  $ ( \{0,2,4\}DR1, \{0,2\}DR0 ) $    & \cellcolor{bosunired!50}  $ ( \{0,2,4\}DR1, \{0,2\}DR0 ) $ \\
+				\hline
+				\cellcolor{applegreen!50} $ ( \{0,2,4,7\}DR1, \{0,2\}DR0 ) $  & \cellcolor{applegreen!50} $ ( \{0,2,4,6\}DR1, \{0,2\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2,4,7,9\}DR1, \{0,2\}DR0 ) $ & $ ( \{0,2,4,6,8\}DR1, \{0,2\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2,4,7,9,11\}DR1, \{0,2\}DR0 ) $ & $ ( \{0,2,4,6,8,10\}DR1, \{0,2\}DR0 ) $ \\
+				\hline
+				... & ... \\
+				\hline
+				$ (\{0,2,4,7,9,.., ((2n)-1)\}DR1, \{0,2\}DR0 )$ & $ (\{0,2,4,.., 2(n-1) \}DR1, \{0,2\}DR0 )$ \\
+				\hline
+				... & ... \\
+				\hline
+				
+			\end{tabular}
+			\caption{$r_{\theta_{2}}$  MERGED vs EVENS}
+			\label{tab: r_theta_2_merged_vs_evens}
+			%\end{turn}
+		\end{center}
+	\end{table}
+	
+	\noindent
+	*n: index of the row beginning in 1.
+	\\\\
+	
+	\begin{table}[h!]
+		\begin{center}
+			%\begin{turn}{270}
+			\begin{tabular}{|l||l|}
+				\hline
+				\multicolumn{2}{|c|}{\cellcolor{lightgray} {$r_{\theta_{3}}$ MERGEDs vs EVENs } } \\
+				\hline
+				$SNEI_{merged} = (0,2,4,7,9,11,13,...)$ & $ SNEI_{evens} = (0,2,4,6,8,10,12,...)$   \\
+				\hline
+				\hline
+				\cellcolor{bosunired!50}  $ ( \{0\}DR1, \{0,2,4\}DR0 ) $        & \cellcolor{bosunired!50}  $ ( \{0\}DR1, \{0,2,4\}DR0 ) $ \\
+				\hline
+				\cellcolor{bosunired!50}  $ ( \{0,2\}DR1, \{0,2,4\}DR0 ) $      & \cellcolor{bosunired!50}  $ ( \{0,2\}DR1, \{0,2,4\}DR0 ) $ \\
+				\hline
+				\cellcolor{bosunired!50}  $ ( \{0,2,4\}DR1, \{0,2,4\}DR0 ) $    & \cellcolor{bosunired!50}  $ ( \{0,2,4\}DR1, \{0,2,4\}DR0 ) $ \\
+				\hline
+				\cellcolor{applegreen!50} $ ( \{0,2,4,7\}DR1, \{0,2,4\}DR0 ) $  & \cellcolor{applegreen!50} $ ( \{0,2,4,6\}DR1, \{0,2,4\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2,4,7,9\}DR1, \{0,2,4\}DR0 ) $ & $ ( \{0,2,4,6,8\}DR1, \{0,2,4\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2,4,7,9,11\}DR1, \{0,2,4\}DR0 ) $ & $ ( \{0,2,4,6,8,10\}DR1, \{0,2,4\}DR0 ) $ \\
+				\hline
+				... & ... \\
+				\hline
+				$ (\{0,2,4,7,9,.., ((2n)-1)\}DR1, \{0,2,4\}DR0 )$ & $ (\{0,2,4,.., 2(n-1) \}DR1, \{0,2,4\}DR0 )$ \\
+				\hline
+				... & ... \\
+				\hline
+				
+			\end{tabular}
+			\caption{$r_{\theta_{3}}$  MERGED vs EVENS}
+			\label{tab: r_theta_3_merged_vs_evens}
+			%\end{turn}
+		\end{center}
+	\end{table}
+	
+	\noindent
+	*n: index of the row beginning in 1.
+	\\\\
+	
+	\noindent
+	The same problem: infinite different lcfs in each PACK, but still three of them repeated in both SNEIs image sets.
+	
+	\newpage
+	
+	\noindent
+	See what happens in $r_{\theta_{4}}$:
+	\\\\
+	\begin{table}[h!]
+		\begin{center}
+			%\begin{turn}{270}
+			\begin{tabular}{|l||l|}
+				\hline
+				\multicolumn{2}{|c|}{\cellcolor{lightgray} {$r_{\theta_{4}}$ MERGEDs vs EVENs } } \\
+				\hline
+				$SNEI_{merged} = (0,2,4,7,9,11,13,...)$ & $ SNEI_{evens} = (0,2,4,6,8,10,12,...)$   \\
+				\hline
+				\hline
+				\cellcolor{applegreen!50}  $ ( \{0\}DR1, \{0,2,4,7\}DR0 ) $        & \cellcolor{applegreen!50}  $ ( \{0\}DR1, \{0,2,4,6\}DR0 ) $ \\
+				\hline
+				\cellcolor{applegreen!50}  $ ( \{0,2\}DR1, \{0,2,4.7\}DR0 ) $      & \cellcolor{applegreen!50}  $ ( \{0,2\}DR1, \{0,2,4,6\}DR0 ) $ \\
+				\hline
+				\cellcolor{applegreen!50}  $ ( \{0,2,4\}DR1, \{0,2,4,7\}DR0 ) $    & \cellcolor{applegreen!50}  $ ( \{0,2,4\}DR1, \{0,2,4,6\}DR0 ) $ \\
+				\hline
+				\cellcolor{applegreen!50} $ ( \{0,2,4,7\}DR1, \{0,2,4,7\}DR0 ) $   & \cellcolor{applegreen!50} $ ( \{0,2,4,6\}DR1, \{0,2,4,6\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2,4,7,9\}DR1, \{0,2,4,7\}DR0 ) $                           & $ ( \{0,2,4,6,8\}DR1, \{0,2,4,6\}DR0 ) $ \\
+				\hline
+				$ ( \{0,2,4,7,9,11\}DR1, \{0,2,4,7\}DR0 ) $                        & $ ( \{0,2,4,6,8,10\}DR1, \{0,2,4,6\}DR0 ) $ \\
+				\hline
+				... & ... \\
+				\hline
+				$ (\{0,2,4,7,9,.., ((2n)-1)\}DR1, \{0,2,4,7\}DR0 )$                  & $ (\{0,2,4,.., 2(n-1) \}DR1, \{0,2,4,6\}DR0 )$ \\
+				\hline
+				... & ... \\
+				\hline
+				
+			\end{tabular}
+			\caption{$r_{\theta_{4}}$  MERGED vs EVENS}
+			\label{tab: r_theta_4_merged_vs_evens}
+			%\end{turn}
+		\end{center}
+	\end{table}
+	\\\\
+	
+	\noindent
+	PACKs are TOTALLY DISJOINT, for THAT CONCRETE D-Pair, in $r_{\theta_{4}}$ !!!
+	\\\\
+	
+	\noindent
+	We call this phenomenom "solving the D-Pair". When a relation, offers complete disjoint PACKS for THAT D-pair. $r_{\theta_{1}},\:r_{\theta_{2}}\: and \:r_{\theta_{3}}$ do not "solve" the D-pair $(SNEI_{merged}, SNEI_{evens})$, BUT $r_{\theta_{4}}$ DOES IT, and it do not need changes to do it.
+	\\\\
+	
+	\noindent
+	All relations $r_{\theta_{k}}$ are created at the same time, when we created the relation $FLJA\_abstract$, and its partition. No relation is more important than other. No relation is created BEFORE or AFTER another one. ALL are completely and "previously" defined, until the last R-pair.
+	\\\\
+	
+	\newpage
+	\section{General property}
+	
+		\noindent
+		1) $r_{\theta_{4}}$ is able to solve the pair $(SNEI_{merged}, SNEI_{evens})$, because their $\gamma$ value is 3.\\\\
+		This means the first different $\lambda-label$ both SNEIs have is in the position $\lambda_{4}$. Like $r_{\theta_{4}}$ only uses lcfs from the universe $\theta_{4}$, all lcfs used has FOUR lambdas in the second CF. ALL lcfs have enough labels, to let the first different symbol appears. Lcfs, to be different, only need one $\lambda-label$ different.
+		\\\\
+		
+		\noindent
+		2) $r_{\theta_{4}}$ is not only able to solve that concrete D-pair; it is able to solve THE ENTIRE FAMILY $F_{3}$: all D-pairs inside that Family have a $\gamma$ value equal to 3. No matter how complicated could be their combinatorics: we know ALL have $\gamma$ value equal to 3. So if ALL of our lcfs have FOUR lambdas for sure, in SOME CF, the first different symbol will appear, always, making the entire PACKs, asigned for those SNEIs, inside those concrete D-pairs, COMPLETELY DISJOINT.
+		\\\\
+		
+		\noindent
+		3)  $r_{\theta_{4}}$ is able to solve $ F_{2},\:F_{1}\:and\:F_{0} $ too. ALL the $\gamma$ values between all those D-pairs, no matter the possible cardinal, are smaller than the quantity of $\lambda-labels$ in the second CF, of ALL lcfs $r_{\theta_{4}}$ uses. The first different symbol, is guaranteed to appear, ALWAYS.
+		\\\\
+		
+		\noindent
+		4) All relations solve $F_{\infty}$: inside that Family of D-Pairs, only exist pairs made by the same SNEI. They can have exactly the same PACK.
+		\\\\
+		
+		\noindent
+		GENERAL RULE:\\\\
+		\fbox{
+			\textbf{\textit{$r_{\theta_{k}}$ is able to solve ALL D-Pairs inside the Families: $F_{k-1},\: F_{k-2}, \:, \:..\: , \: F_{0} ,\: F_{\infty}$.}}
+		}
+		\\\\
+		
+		\subsection{FIRST mathematically impossible intermediate point:}
+		
+			\noindent
+			When you say experts, you can solve a set with cardinal $\aleph_{1}$, or worst, just using a subset of N, they often OVERREACT. They say it is "mathematically impossible".
+			\\\\
+			
+			\noindent
+			SEE HOW SMOOTHLY, without complicated mathematical tools, we have "solved", many different times, several sets with cardinal $\aleph_{1}$ (Families have THAT cardinal: we talked about it in previous chapters), using only one universe from $LCF_{2p}$. If we use the bijection $\Omega$, we can transform THAT universe $\theta_{k}$ into a subset of $\mathbb{N}$. AND it happens in each $r_{\theta_{k}}$ relation: $r_{\theta_{1}}$ is able to solve TWO Families.
+			\\\\
+			
+			\noindent
+			A mathematically impossible problem, solved with an insultingly simple solution: it is just a positional problem. Undenyable. Solid as diamond. As smooth as TRUTH is.
+			\\\\
+			
+			\noindent
+			You could say: you are NOT talking about elements, you change the spectrum to D-pairs !!. Definition of injectivity let us talk in that spectrum. It can be a pathetic, simple, stupid solution, BUT it is still a \textbf{bridge between TWO DIFFERENT ALEPHS} !! Let us talk in quantities of $\aleph_{1}$ using only quantities of $\aleph_{0}$.
+			\\\\
+	
