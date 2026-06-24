@@ -1,0 +1,103 @@
+\chapter{More rules to fit DI into our particular case}
+
+	\noindent
+	This could seem more complicated, but in reallity will make the observation much more easy. And we do it: BECAUSE WE CAN.
+	\\\\
+	
+	\section{New rules added to the basic game}
+		\subsection {Context summary:}
+			\noindent
+			CONTEXT SUMMARY:\\\\
+			a) We are applying DI to SNEIs ( as Domain ) vs $LCF_{2p}$ ( as Image set ).\\\\
+			b) Our initial state is the relation FLJA\_abstract. The union of all relations $r_{\theta_{k}}$. All are sets of R-pairs, so it works.\\\\
+			c) We have found properties in the system of relations $r_{\theta_{k}}$. FLJA\_abstract inherit those properties in some way.\\\\
+			c.1) Each snei receives in each $r_{\theta_{k}}$ relation, an INFINITE PACK of lcfs, from ONE unique universe $\theta_{k}$. The union will make that each SNEI received a MEGA PACK: the union of all PACKS from each $r_{\theta_{k}}$ relation.\\\\
+			c.2) Each MEGAPACK is made by sub-packs.\\\\
+			c.3) Each subpack, comes from a different disjoint Universe, inside the same MEGAPACK.\\\\
+			c.4) ALL MEGAPACKs, have at least ONE subpack, coming from the same Universe.\\\\
+			c.5) This is a property for all universes: \textbf{Each universe $\theta_{k}$ puts an infinite subpack, inside every MEGAPACK}. They are not disjoint, between megapacks, but are disjoint between subpacks inside the same MEGAPACK. MEGAPACKs are divided by "levels", and all subpacks, in the same level, of all MEGAPACKs, are directly related to one singular universe.
+
+		\newpage
+		\subsection{Idea in images:}
+		
+			\includegraphics[scale=0.8]{DI/Chapter18/MEGAPACKs.png}
+		
+		\newpage
+		\subsection{New rules}
+			\noindent
+			When we found a D-pair, with, at least, ONE lcf in common, between the two PACKs, assigned for those concrete two sneis (if they are different):
+			\\\\
+			
+			\noindent
+			\textbf{\underline{RULE 1:}}\\\\
+			1.a) We will check the level of conflict $\gamma$ between the two SNEIs. Imagine $\gamma=k$.\\\\
+			1.b) We will erradicate ALL lcfs, from FLJA\_abstract, from ALL the universes, between $\theta_{1}$ and $\theta_{k}$, both included.\\\\
+			1.c) If we try to eliminate lcfs from a previously eliminated universe, nothing happens, just continue erradicating, until acomplish the entire list of universes affected.
+			\\\\
+			
+			\noindent
+			Explanation:\\\\
+			This will eliminate the original lcf we have found in common between the two PACKs inside that concrete D-pair. Like we saw in previous chapters: all lcfs, PACKS have in common, in a D-pair, belongs to universes with a subindex equal or smaller than the level of conflict $\gamma$, between the two sneis involved.\\\\
+			Erradicating lcfs, means erradicating ALL R-pairs, where they could be, inside the relation FLJA\_abstract.\\\\
+			While we are erradicating an entire universe, this means we will erradicate ALL subpacks from the same level, from ALL MEGAPACKs: if we need to erradicate universe $\theta_{k}$, this means we will quit all subpacks from level k, from all MEGAPACKs.\\\\
+			Like we quit the previous universes too (in index), we will quit ALL subpacks from previous levels too.\\\\
+			In the entire FLJA\_abstract relation, after the erradication, only will remain lcfs from universes with indexes greater than the level of conflict $\gamma$ we have found in that concrete D-pair.
+			\\\\
+			
+			\noindent
+			\textbf{\underline{RULE 2:}}\\\\
+			2.a) After making the erradication of lcfs (R-pairs), a possible D-pair could provoke. We will consider the Family, that D-pair belongs, as entirely solved by the new state of FLJA\_abstract.\\\\
+			2.b) We will consider all the previous Families, in index, solved too, until $F_{0}$ amd $F_{\infty}$.\\\\
+			2.c) We will not ask for any possible D-pair, inside Families, with indexes equal or smaller (remember that $F_{\infty}$ is the first family of them all; the smaller one) than the greatest $\gamma$ found until the moment. After the proper erradications.
+			\\\\
+			
+			\noindent
+			Explanation:\\\\
+			After the erradications, inside FLJA\_abstract new state, only survives lcfs with quantities of $\lambda$-labels, inside the second CF, bigger, than the biggest $\gamma$ found until that moment. If you try D-pairs inside those families, we know for sure those sneis have totally disjoint PACKS. All lcfs inside the relation, ALL... have enough $\lambda$-labels to always have one difference between the lcfs, inside the PACKs assigned.\\\\
+			It's useless to ask for those SOLVED D-pairs, thanks to erradications: This property is inherited from the system of relations, FLJA\_abstract, comes from.\\\\
+			When we erradicate an entire universe, and quitting all R-pairs related to those lcfs, inside that universe $\theta_{k}$...what we are doing in reallity is quitting the entire relation $r_{\theta_{k}}$ from the original union that created FLJA\_abstract.\\\\
+			When we quit an entire $r_{\theta_{k}}$ relation from the original union, we are not quitting the same subpacks. All subpacks,could have some elements in common, but all are different, as complete sets of lcfs. What we are quitting, is all subapacks, from the same level, from ALL MEGAPACKs.\\\\
+			\textbf{WE CAN OBSERVE WHAT HAPPENS TO ALL MEGAPACKS, JUST OBSERVING ONE ARBITRARY MEGAPACK. ALL THEM LOOSE LEVELS, IN THE SAME WAY, AT THE SAME TIMES, THANKS TO THE WAY WE MAKE ERRADICATIONS.}
+			\\\\
+		
+		\newpage
+		\subsection{The game of DI}
+		
+			\noindent
+			Once FLJA\_Abstract is constructed, you can dare any possible mathematician to try find some concrete D-pair. Once they have chosen one, no matter the combinatorics of (SNEIs X SNEIs), we can see the finite natural value of $\gamma$ between the sneis inside that mentioned D-pair. After the proper erradications, we will only quit a finite quantity of levels from ALL MEGAPACKS, and we will have ALWAYS, infinite levels of subpacks, surviving, inside ALL MEGAPACKS, assigned to ALL sneis inside SNEIs.
+			\\\\
+			
+			\noindent
+			You can repeat this, a random finite quantity of times: this phenomenom will not change. THIS IS WHY we call this phenomenom Inverse Diagonalization (DI). It is very similar to the original diagonalization, but with the roles inverted: NOW you can not "discard" completely $LCF_2p$, using single tries of "conflicts" (D-pairs with common elements inside their PACKs, in the actual state of FLJA\_abstract).
+			\\\\
+			
+			\noindent
+			You can choose any possible D-pair, totally free, and will always survive infinite subpacks inside ALL MEGAPACKs.
+			\\\\
+			
+			\noindent
+			We are only quitting elements from $LCF_{2p}$ making it smaller; and quitting R-pairs from FLJA\_abstract... but maintaining a subset of R-pairs, that always stays unchanged, inside the original relation.
+			\\\\
+			
+			\noindent
+			Even it is acumulative: if you try it "infinite times", one by one... in all steps of that infinite list of tries, will always survive, per each MEGAPACK, infinite subpacks inside it, after ALL erradications, provoked for those steps.
+			\\\\
+			
+			\noindent
+			The problem here is: which kind of infinite are you?
+			\\\\
+			
+			\noindent
+			Some curious observations:\\\\
+			1) If you keep your tries inside solved families, you can make easily $\aleph_{1}$ ( or worst ) tries, and we will never need, even, to do new erradications: THIS IS WHY WE HAVE THE RULE TO NOT TRY D-pairs inside solved Families. It's stupid.\\\\
+			2) When you try a single unique D-pair, it is like you are trying ALL D-pairs, inside its Family, in paralell. When we solve it, we solve all D-pairs inside that Family... erradicating lcfs, makes those D-pairs, to have disjoint PACKS, FOREVER.\\\\
+			3) Not only that Family, previous ones too. In case previous tries, have not erradicated them yet.\\\\
+			4) Now read unnecesary comment 0014: Groups of Study. I need you to search (but read carefully all previous text) the case when we have an enumerable quantity of sneis, and inside that Group of Study, we don't have a maximum $\gamma$ value. Like it is explained in that point, we can define an enumerable, infinite list, of D-pairs with unstopable growing $\gamma$ levels of conflict.\\\\
+			You could try to say, that you can design a list of enumerable D-pairs, each one with a different, growing, $\gamma$ level of conflict, so you could erradicate each possible level, from one MEGAPACK (or all them), lefting MEGAPACKs empty. But think twice about this... if you try all possible $\gamma$ values, you help to ERRADICATE all Families of (SNEIs X SNEIs) too. All (SNEIs X SNEIs) is related to the concept of ALL SNEIs set.\\\\
+			\textbf{YOU CAN NOT DISCARD ALL LCFs INSIDE A MEGAPACK, WITHOUT DISCARDING TOO, ALL possible sneis or D-pairs, as candidates for conflicts. ABSOLUTELY ALL. Nothing less than ALL.}
+			\\\\
+		
+		
+		
+		
+		
