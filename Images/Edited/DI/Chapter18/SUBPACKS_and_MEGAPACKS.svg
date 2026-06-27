@@ -28,7 +28,7 @@
      inkscape:document-units="mm"
      inkscape:zoom="1.03"
      inkscape:cx="396.60194"
-     inkscape:cy="172.3301"
+     inkscape:cy="405.33981"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -62,7 +62,10 @@
        x="9.7613268"
        y="19.265778"
        rx="4.7374234"
-       ry="4.7374234" />
+       ry="4.7374234"
+       inkscape:export-filename="MEGAPACKs.png"
+       inkscape:export-xdpi="135.607"
+       inkscape:export-ydpi="135.607" />
     <rect
        style="fill:#ff0000;stroke:#ffffff;stroke-width:0.600001"
        id="rect1"
@@ -94,7 +97,7 @@
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text1"
-       style="font-size:40px;line-height:1.25;font-family:sans-serif;text-align:center;white-space:pre;shape-inside:url(#rect2)" />
+       style="font-size:40px;line-height:1.25;font-family:sans-serif;text-align:center;white-space:pre;shape-inside:url(#rect2);display:inline" />
     <path
        id="rect3"
        style="fill:#ff8888;fill-opacity:1;stroke:#ffffff;stroke-width:0.600001"
