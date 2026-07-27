@@ -3,13 +3,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Divide and Conquer strategy. Partitions and paths.}}{17}{figure.4.1}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Divide and Conquer strategy. Partitions and paths.}}{18}{figure.4.1}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Origin of a SNEF. Only the ordered version works for us.}}{20}{figure.6.1}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Origin of a SNEF. Only the ordered version works for us.}}{21}{figure.6.1}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -19,13 +16,17 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {18.1}{\ignorespaces ZOOM IN: Megapacks, subpacks and levels.}}{70}{figure.18.1}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {18.1}{\ignorespaces ZOOM IN: Megapacks, subpacks and levels.}}{71}{figure.18.1}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {22.1}{\ignorespaces Most extern level of OMEGA. Step 001.}}{96}{figure.22.1}%
-\contentsline {figure}{\numberline {22.2}{\ignorespaces Delta level. CLJA-PNN flja. Step 002.}}{96}{figure.22.2}%
-\contentsline {figure}{\numberline {22.3}{\ignorespaces Function $tb_{j}$ }}{97}{figure.22.3}%
-\contentsline {figure}{\numberline {22.4}{\ignorespaces Function tbhik }}{97}{figure.22.4}%
-\contentsline {figure}{\numberline {22.5}{\ignorespaces Function P, or PosH, or Position of the Hole (blue or red), or Translation function. }}{97}{figure.22.5}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {23.1}{\ignorespaces Most extern level of OMEGA. Step 001.}}{103}{figure.23.1}%
+\contentsline {figure}{\numberline {23.2}{\ignorespaces Delta level. CLJA-PNN flja. Step 002.}}{103}{figure.23.2}%
+\contentsline {figure}{\numberline {23.3}{\ignorespaces Function $tb_{j}$ }}{104}{figure.23.3}%
+\contentsline {figure}{\numberline {23.4}{\ignorespaces Function tbhik }}{104}{figure.23.4}%
+\contentsline {figure}{\numberline {23.5}{\ignorespaces Function P, or PosH, or Position of the Hole (blue or red), or Translation function. }}{104}{figure.23.5}%
