@@ -116,8 +116,873 @@
 	\section{SEMI-XMAS-TREE pattern in finite cardinalities:}
 	
 		\noindent
+		Let's define a group of sets:\\\\
+		$DOMAIN \: = \: \{ \: a, \: b, \: c, \: d, \: e \:\}$\\\\
+		$O_{1} \: = \: \{ \: 0 \:\}$\\\\ 
+		$O_{2} \: = \: \{ \: 1, \: 2 \: \}$\\\\ 
+		$O_{3} \: = \: \{ \: 3, \: 4, \: 5 \: \}$\\\\ 
+		$O_{4} \: = \: \{ \: 6, \: 7, \: 8, \: 9 \: \}$\\\\ 
+		$O_{5} \: = \: \{ \: 10, \: 11, \: 12, \: 13, \: 14 \: \}$\\\\
+		$ORIGIN \: = \: O_{1} \: \cup \: O_{2} \: \cup \: O_{3} \: \cup \: O_{4} \: \cup \: O_{5}$\\\\
+		$ORIGIN \: = \: \{ 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14 \}$\\\\
+		$ \forall i,j \in \{1,2,3,4,5\}, i \neq j,  O_{i} \cap O_{j}  = \emptyset $. They are all disjoint between them. They are a PARTITION of ORIGIN.
+		\\\\
+		
+		\noindent
+		All clear? Let's see some tables...
+		\\\\
+		
+		\noindent
+		Imagine a perpendicular light, coming from the bottom. Let's see what we can "shadow" with only $O_{1}$:\\
+		\begin{table}[h!]
+			\begin{center}
+				%\begin{turn}{270}
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					\cellcolor{myblue} a & 
+					\cellcolor{bosunired!50} b &
+					\cellcolor{bosunired!50} c &
+					\cellcolor{bosunired!50} d &
+					\cellcolor{bosunired!50} e \\
+					\hline
+					\cellcolor{applegreen!50} 0 &
+					\multicolumn{4}{|c|}{} \\
+					%\cellcolor{applegreen!50}
+					%\cellcolor{bosunired!50}
+					%\cellcolor{myblue}
+					\hline
+				\end{tabular}
+				%\caption{System of relations $r_{\theta_{k}}$}
+				%\label{tab: system_relations_r_theta_k}
+				%\end{turn}
+			\end{center}
+		\end{table}
+		
+		\noindent
+		The unshadowed zone of DOMAIN is in red: $S_{1} = \{b,c,d,e\}$.
+		\\\\
+		
+		\noindent
+		Let's try it now with $O_{2}$:\\
+		\begin{table}[h!]
+			\begin{center}
+				%\begin{turn}{270}
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					\cellcolor{myblue} a & 
+					\cellcolor{myblue} b &
+					\cellcolor{bosunired!50} c &
+					\cellcolor{bosunired!50} d &
+					\cellcolor{bosunired!50} e \\
+					\hline
+					\cellcolor{applegreen!50} 0 &
+					\multicolumn{4}{|c|}{} \\
+					\hline
+					\cellcolor{applegreen!50} 1 &
+					\cellcolor{applegreen!50} 2 &
+					\multicolumn{3}{|c|}{} \\
+					%\cellcolor{applegreen!50}
+					%\cellcolor{bosunired!50}
+					%\cellcolor{myblue}
+					\hline
+				\end{tabular}
+				%\caption{System of relations $r_{\theta_{k}}$}
+				%\label{tab: system_relations_r_theta_k}
+				%\end{turn}
+			\end{center}
+		\end{table}
+		
+		\noindent
+		The unshadowed zone is now: $S_{2} = \{c,d,e\}$.
+		\\\\
+		
+		\newpage
+		\noindent
+		Let's try $O_{3}$:\\
+		\begin{table}[h!]
+			\begin{center}
+				%\begin{turn}{270}
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					\cellcolor{myblue} a & 
+					\cellcolor{myblue} b &
+					\cellcolor{myblue} c &
+					\cellcolor{bosunired!50} d &
+					\cellcolor{bosunired!50} e \\
+					\hline
+					\cellcolor{applegreen!50} 0 &
+					\multicolumn{4}{|c|}{} \\
+					\hline
+					\cellcolor{applegreen!50} 1 &
+					\cellcolor{applegreen!50} 2 &
+					\multicolumn{3}{|c|}{} \\
+					\hline
+					\cellcolor{applegreen!50} 3 &
+					\cellcolor{applegreen!50} 4 &
+					\cellcolor{applegreen!50} 5 &
+					\multicolumn{2}{|c|}{} \\
+					%\cellcolor{applegreen!50}
+					%\cellcolor{bosunired!50}
+					%\cellcolor{myblue}
+					\hline
+				\end{tabular}
+				%\caption{System of relations $r_{\theta_{k}}$}
+				%\label{tab: system_relations_r_theta_k}
+				%\end{turn}
+			\end{center}
+		\end{table}
+		
+		\noindent
+		The unshadowed zone is now: $S_{3} = \{d,e\}$.
+		\\\\
+		
+		\noindent
+		Let's try $O_{4}$:\\
+		\begin{table}[h!]
+			\begin{center}
+				%\begin{turn}{270}
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					\cellcolor{myblue} a & 
+					\cellcolor{myblue} b &
+					\cellcolor{myblue} c &
+					\cellcolor{myblue} d &
+					\cellcolor{bosunired!50} e \\
+					\hline
+					\cellcolor{applegreen!50} 0 &
+					\multicolumn{4}{|c|}{} \\
+					\hline
+					\cellcolor{applegreen!50} 1 &
+					\cellcolor{applegreen!50} 2 &
+					\multicolumn{3}{|c|}{} \\
+					\hline
+					\cellcolor{applegreen!50} 3 &
+					\cellcolor{applegreen!50} 4 &
+					\cellcolor{applegreen!50} 5 &
+					\multicolumn{2}{|c|}{} \\
+					\hline
+					\cellcolor{applegreen!50} 6 &
+					\cellcolor{applegreen!50} 7 &
+					\cellcolor{applegreen!50} 8 &
+					\cellcolor{applegreen!50} 9 &
+					\:\: \\
+					%\cellcolor{applegreen!50}
+					%\cellcolor{bosunired!50}
+					%\cellcolor{myblue}
+					\hline
+				\end{tabular}
+				%\caption{System of relations $r_{\theta_{k}}$}
+				%\label{tab: system_relations_r_theta_k}
+				%\end{turn}
+			\end{center}
+		\end{table}
+		
+		\noindent
+		The unshadowed zone is now: $S_{4} = \{e\}$.
+		\\\\
+		
+		\noindent
+		Let's try $O_{5}$:\\
+		\begin{table}[h!]
+			\begin{center}
+				%\begin{turn}{270}
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					\cellcolor{myblue} a & 
+					\cellcolor{myblue} b &
+					\cellcolor{myblue} c &
+					\cellcolor{myblue} d &
+					\cellcolor{myblue} e \\
+					\hline
+					\cellcolor{applegreen!50} 0 &
+					\multicolumn{4}{|c|}{} \\
+					\hline
+					\cellcolor{applegreen!50} 1 &
+					\cellcolor{applegreen!50} 2 &
+					\multicolumn{3}{|c|}{} \\
+					\hline
+					\cellcolor{applegreen!50} 3 &
+					\cellcolor{applegreen!50} 4 &
+					\cellcolor{applegreen!50} 5 &
+					\multicolumn{2}{|c|}{} \\
+					\hline
+					\cellcolor{applegreen!50} 6 &
+					\cellcolor{applegreen!50} 7 &
+					\cellcolor{applegreen!50} 8 &
+					\cellcolor{applegreen!50} 9 &
+					\:\: \\
+					\hline
+					\cellcolor{applegreen!50} 10 &
+					\cellcolor{applegreen!50} 11 &
+					\cellcolor{applegreen!50} 12 &
+					\cellcolor{applegreen!50} 13 &
+					\cellcolor{applegreen!50} 14 \\
+					%\cellcolor{applegreen!50}
+					%\cellcolor{bosunired!50}
+					%\cellcolor{myblue}
+					\hline
+				\end{tabular}
+				%\caption{System of relations $r_{\theta_{k}}$}
+				%\label{tab: system_relations_r_theta_k}
+				%\end{turn}
+			\end{center}
+		\end{table}
+		
+		\noindent
+		The unshadowed zone is now: $S_{5} = \emptyset$.
+		\\\\
+		
+		\newpage
+		\noindent
+		Can you see the pattern? It is the same than in the system of relations $r_{\theta_{k}}$.
+		\\\\
+		
+		\noindent
+		The element "e" is part of all $S_{k}$, until we finally quit it with the last subset of ORIGIN: $S_{5}$.
+		\\\\
+		
+		\noindent
+		In finite spectrum we can see how the cardinal of each $S_{k}$ decrease. IN INFINITE SPECTRUM we can not say 3..2..1.. 0 elements. We won't have got the $\emptyset$ as the final $S_{k}$. But like they are NESTED SUBSETS, we can talk about their intersection, without mention cardinals, to see if we have "shadowed" all the DOMAIN set. Even if we never have the "final" $S_{k}$ being empty:\\\\
+		$$ S_{1} \cap S_{2} \cap S_{3} \cap S_{4} \cap S_{5} \: = \: \emptyset $$
+		\\\\
+		
+		\noindent
+		$ Card(DOMAIN) \: = \: 5 $\\
+		$ Card(ORIGIN) \: = \: 15 $ \\
+		To create the same phenomenom than we had in the two tables, with Little Leather Bags (LLBs)... we needed in the ORIGIN set three more times elements than in DOMAIN. For only 5 elements, in only 5 steps. Much worst than only doubling THE QUANTITY of the elements inside the DOMAIN.
+		\\\\
+		
+		\noindent
+		We have used disjoint pieces of ORIGIN in each "shadowing" try. We have not changed the cardinal of ORIGIN, creating all tries.
+		\\\\
+		
+		\noindent
+		\textit{\textbf{AND WE KNOW we have REACHED ALL the DOMAIN because the intersection of ALL nested $S_{k}$ subsets, is the empty set. Without mentioning, the cardinal of each $S_{k}$.}}
+		\\\\
+		
+		\noindent
+		This last sentence is what is going to make you to defend the DI. I am trying to be honest, showing you the weak points. But before falling to the temptation, remember what you said about the meaning of the intersection of all substates of the MEGAPACK in DI.
+		\\\\
+		
+		\noindent
+		We have solved the problem of "proximity" to cover ALL DOMAIN. We need to define steps too, without using different cardinals. In this simple example, our cardinals, of subsets $O_{k}$, grow ONE element each time, but between $\aleph_{0}$ and $\aleph_{1}$ there are no cardinals in between.
+		\\\\
+		
+	\newpage
+	\section{NWSP, WSP and QRE}
+		
+		\noindent
+		We can not talk about cardinals, so we can not talk about elements. But thanks the core idea of the definition of injectivity, we have an alternative:\\
+		$$f(a) = f(b) \leftrightarrow a=b$$
+		
+		\noindent
+		It means that if we check ALL possible pairs from (DOMAIN X DOMAIN), and all have different, or DISJOINT images (Naive CA Th), DOMAIN has not a quantity of elements, bigger than the quantity of elements inside the IMAGE set.
+		\\\\
+		
+		\noindent
+		Using complete relations, that are not functions, we will be able to:\\
+		1) See how near we are from the COMPLETE (DOMAIN x DOMAIN), using D-pairs, instead of isolated (or grouped) elements from DOMAIN.\\
+		2) And like the totallity of (DOMAIN X DOMAIN), means the TOTALLITY of DOMAIN, too, we can do the steps of the shadowing, in (DOMAIN X DOMAIN).
+		\\\\
+		
+		\noindent
+		We will change the concept of TPI to (DOMAIN x DOMAIN) instead of talking about isolated elements from DOMAIN.
+		\\\\
+		
+		\noindent
+		We will need the concepts:\\\\
+		1) NWSP: Not Well Solved Pairs (D-pairs).\\\\
+		2) WSP: Well Solved Pairs (D-pairs).\\\\
+		3) QRE: Quantity of Repeated Elements ( How many D-pairs has not disjoint images )
+		\\\\
+		
+		\noindent
+		And we will need RELATIONS, entirelly defined, to talk about solved D-pairs INSIDE those relations. Let me show you some examples and how NWSP, WSP and QRE works for them.
+		\\\\
+		
+		\noindent
+		We will use the same sets than in the previous section:\\\\
+		$DOMAIN \: = \: \{ \: a, \: b, \: c, \: d, \: e \:\}$\\\\
+		$O_{1} \: = \: \{ \: 0 \:\}$\\\\ 
+		$O_{2} \: = \: \{ \: 1, \: 2 \: \}$\\\\ 
+		$O_{3} \: = \: \{ \: 3, \: 4, \: 5 \: \}$\\\\ 
+		$O_{4} \: = \: \{ \: 6, \: 7, \: 8, \: 9 \: \}$\\\\ 
+		$O_{5} \: = \: \{ \: 10, \: 11, \: 12, \: 13, \: 14 \: \}$
+		\\\\
+		
+		\noindent
+		Our first relation $R_{1}$ is going to be between DOMAIN and $O_{1}$:\\\\
+		$R_{1}: DOMAIN \rightarrow O_{1}$\\\\
+		We will represent it using a table with two rows and five columns. Elements in the same column are related. We will repeat the use of elements from IMAGE set $O_{1}$:\\\\
+		
+		\begin{table}[h!]
+			\begin{center}
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					a & b & c & d & e \\
+					\hline
+					0 & 0 & 0 & 0 & 0 \\
+					\hline
+				\end{tabular}
+			\end{center}
+		\end{table}
+		
+		\noindent
+		The previous one is the relation sawn from the perspective of R-pairs. From the perspective of D-pairs:\\\\		
+		\begin{table}[h!]
+			\begin{center}
+				\begin{tabular}{|l|c|c|c|c|c|r|}
+					\hline
+						\cellcolor{applegreen!50} $ \searrow F_{0} $ &
+						\cellcolor{lightgray} a &
+						\cellcolor{lightgray} b &
+						\cellcolor{lightgray} c &
+						\cellcolor{lightgray} d &
+						\cellcolor{lightgray} e &
+						\cellcolor{lightgray!50} Families \\
+					\hline
+						\cellcolor{lightgray} a &
+						\cellcolor{applegreen!50} $(a,a)$  &
+						\cellcolor{bosunired!50}  $(a,b)$  &
+						\cellcolor{bosunired!50}  $(a,c)$  &
+						\cellcolor{bosunired!50}  $(a,d)$  &
+						\cellcolor{bosunired!50}  $(a,e)$  &
+						\cellcolor{lightgray} $ \leftarrow F_{1} $ \\
+					\hline
+						\cellcolor{lightgray} b &
+						\cellcolor{bosunired!50}  $(b,a)$  &
+						\cellcolor{applegreen!50} $(b,b)$  &
+						\cellcolor{bosunired!50}  $(b,c)$  &
+						\cellcolor{bosunired!50}  $(b,d)$  &
+						\cellcolor{bosunired!50}  $(b,e)$  &
+						\cellcolor{lightgray} $ \leftarrow F_{2} $ \\
+					\hline
+						\cellcolor{lightgray} c &
+						\cellcolor{bosunired!50}  $(c,a)$  &
+						\cellcolor{bosunired!50}  $(c,b)$  &
+						\cellcolor{applegreen!50} $(c,c)$  &
+						\cellcolor{bosunired!50}  $(c,d)$  &
+						\cellcolor{bosunired!50}  $(c,e)$  &
+						\cellcolor{lightgray} $ \leftarrow F_{3} $ \\
+					\hline
+						\cellcolor{lightgray} d &
+						\cellcolor{bosunired!50}  $(d,a)$  &
+						\cellcolor{bosunired!50}  $(d,b)$  &
+						\cellcolor{bosunired!50}  $(d,c)$  &
+						\cellcolor{applegreen!50} $(d,d)$  &
+						\cellcolor{bosunired!50}  $(d,e)$  &
+						\cellcolor{lightgray} $ \leftarrow F_{4} $ \\
+					\hline
+						\cellcolor{lightgray} e &
+						\cellcolor{bosunired!50}  $(e,a)$  &
+						\cellcolor{bosunired!50}  $(e,b)$  &
+						\cellcolor{bosunired!50}  $(e,c)$  &
+						\cellcolor{bosunired!50}  $(e,d)$  &
+						\cellcolor{applegreen!50} $(e,e)$  &
+						\cellcolor{black} \:\: \\
+					\hline
+						\cellcolor{black} \:\: &
+						\cellcolor{lightgray}  $ \uparrow F_{1} $  &
+						\cellcolor{lightgray}  $ \uparrow F_{2} $  &
+						\cellcolor{lightgray}  $ \uparrow F_{3} $  &
+						\cellcolor{lightgray}  $ \uparrow F_{4} $  &
+						\cellcolor{black} \:\:  &
+						\cellcolor{applegreen!50} $ \nwarrow F_{0} $ \\
+					\hline			
+				\end{tabular}
+			\end{center}
+		\end{table}	
+		
+		\noindent
+		All green D-pairs are well solved in $R_{1}$:\\
+		1) Or they have disjoint images (different).\\
+		2) Or the D-pair is made by the same element of DOMAIN.\\
+		\\\\
+		
+		\noindent
+		Let me create a partition of Families for those 25 D-pairs inside our (DOMAIN x DOMAIN) set:\\\\
+		$F_{0}$: D-pairs in the diagonal. $F_{0} = \{(a,a), (b,b), (c,c), (d,d), (e,e)\}$.\\\\
+		$F_{1} = \{(a,b), (a,c), (a,d), (a,e), (b,a),(c,a), (d,a),(e,a)\}$\\\\
+		$F_{2} = \{(b,c),(b,d),(b,e),(c,b),(d,b),(e,b)\}$\\\\
+		$F_{3} = \{(c,d),(c,e),(d,c),(e,c)\}$\\\\
+		$F_{4} = \{(d,e),(e,d)\}$
+		\\\\
+		
+		\noindent
+		Now I can show who is NWSP, WSP and QRE. BUT, they depend on the relation:\\
+		$NWSP_{R_{1}} = F_{1} \cup F_{2} \cup F_{3} \cup F_{4}$\\
+		$WSP_{R_{1}} = F_{0}$\\
+		$QRE_{R_{1}} = Card(NWSP) = Card(F_{1}) + Card(F_{2}) + Card(F_{3}) +  Card(F_{4})= 8+6+4+2= 20 $
 		
 		
+		\newpage
+		
+		\noindent
+		Now let's show more quickly the rest of the relations. $R_{2}$:\\\\
+		$R_{2}: DOMAIN \rightarrow O_{2}=\{1,2\}$\\\\
+		\begin{table}[h!]
+			\begin{center}
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					a & b & c & d & e \\
+					\hline
+					1 & 2 & 2 & 2 & 2 \\
+					\hline
+				\end{tabular}
+			\end{center}
+		\end{table}
+		
+		\noindent
+		From the perspective of D-pairs:\\\\
+		\begin{table}[h!]
+			\begin{center}
+				\begin{tabular}{|l|c|c|c|c|c|r|}
+					\hline
+					\cellcolor{applegreen!50} $ \searrow F_{0} $ &
+					\cellcolor{lightgray} a &
+					\cellcolor{lightgray} b &
+					\cellcolor{lightgray} c &
+					\cellcolor{lightgray} d &
+					\cellcolor{lightgray} e &
+					\cellcolor{lightgray!50} Families \\
+					\hline
+					\cellcolor{lightgray} a &
+					\cellcolor{applegreen!50}  $(a,a)$  &
+					\cellcolor{applegreen!50}  $(a,b)$  &
+					\cellcolor{applegreen!50}  $(a,c)$  &
+					\cellcolor{applegreen!50}  $(a,d)$  &
+					\cellcolor{applegreen!50}  $(a,e)$  &
+					\cellcolor{lightgray} $ \leftarrow F_{1} $ \\
+					\hline
+					\cellcolor{lightgray} b &
+					\cellcolor{applegreen!50}  $(b,a)$  &
+					\cellcolor{applegreen!50}  $(b,b)$  &
+					\cellcolor{bosunired!50}   $(b,c)$  &
+					\cellcolor{bosunired!50}   $(b,d)$  &
+					\cellcolor{bosunired!50}   $(b,e)$  &
+					\cellcolor{lightgray} $ \leftarrow F_{2} $ \\
+					\hline
+					\cellcolor{lightgray} c &
+					\cellcolor{applegreen!50}  $(c,a)$  &
+					\cellcolor{bosunired!50}   $(c,b)$  &
+					\cellcolor{applegreen!50}  $(c,c)$  &
+					\cellcolor{bosunired!50}   $(c,d)$  &
+					\cellcolor{bosunired!50}   $(c,e)$  &
+					\cellcolor{lightgray} $ \leftarrow F_{3} $ \\
+					\hline
+					\cellcolor{lightgray} d &
+					\cellcolor{applegreen!50}  $(d,a)$  &
+					\cellcolor{bosunired!50}   $(d,b)$  &
+					\cellcolor{bosunired!50}   $(d,c)$  &
+					\cellcolor{applegreen!50}  $(d,d)$  &
+					\cellcolor{bosunired!50}   $(d,e)$  &
+					\cellcolor{lightgray} $ \leftarrow F_{4} $ \\
+					\hline
+					\cellcolor{lightgray} e &
+					\cellcolor{applegreen!50}  $(e,a)$  &
+					\cellcolor{bosunired!50}   $(e,b)$  &
+					\cellcolor{bosunired!50}   $(e,c)$  &
+					\cellcolor{bosunired!50}   $(e,d)$  &
+					\cellcolor{applegreen!50}  $(e,e)$  &
+					\cellcolor{black} \:\: \\
+					\hline
+					\cellcolor{black} \:\: &
+					\cellcolor{lightgray}  $ \uparrow F_{1} $  &
+					\cellcolor{lightgray}  $ \uparrow F_{2} $  &
+					\cellcolor{lightgray}  $ \uparrow F_{3} $  &
+					\cellcolor{lightgray}  $ \uparrow F_{4} $  &
+					\cellcolor{black} \:\:  &
+					\cellcolor{applegreen!50} $ \nwarrow F_{0} $ \\
+					\hline			
+				\end{tabular}
+			\end{center}
+		\end{table}	
+		
+		\noindent
+		$WSP_{R_{2}} = F_{0} \cup F_{1} $ \\
+		$NWSP_{R_{2}} = F_{2} \cup F_{3} \cup F_{4}$\\
+		$QRE_{R_{2}} = Card(NWSP) = Card(F_{2}) + Card(F_{3}) +  Card(F_{4})= 6+4+2= 12 $
+		\\\\
+		
+		\newpage
+		
+		\noindent
+		$R_{3}: DOMAIN \rightarrow O_{3}=\{3,4,5\}$\\\\
+		\begin{table}[h!]
+			\begin{center}
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					a & b & c & d & e \\
+					\hline
+					3 & 4 & 5 & 5 & 5 \\
+					\hline
+				\end{tabular}
+			\end{center}
+		\end{table}
+		
+		\noindent
+		From the perspective of D-pairs:\\\\
+		\begin{table}[h!]
+			\begin{center}
+				\begin{tabular}{|l|c|c|c|c|c|r|}
+					\hline
+					\cellcolor{applegreen!50} $ \searrow F_{0} $ &
+					\cellcolor{lightgray} a &
+					\cellcolor{lightgray} b &
+					\cellcolor{lightgray} c &
+					\cellcolor{lightgray} d &
+					\cellcolor{lightgray} e &
+					\cellcolor{lightgray!50} Families \\
+					\hline
+					\cellcolor{lightgray} a &
+					\cellcolor{applegreen!50}  $(a,a)$  &
+					\cellcolor{applegreen!50}  $(a,b)$  &
+					\cellcolor{applegreen!50}  $(a,c)$  &
+					\cellcolor{applegreen!50}  $(a,d)$  &
+					\cellcolor{applegreen!50}  $(a,e)$  &
+					\cellcolor{lightgray} $ \leftarrow F_{1} $ \\
+					\hline
+					\cellcolor{lightgray} b &
+					\cellcolor{applegreen!50}  $(b,a)$  &
+					\cellcolor{applegreen!50}  $(b,b)$  &
+					\cellcolor{applegreen!50}  $(b,c)$  &
+					\cellcolor{applegreen!50}  $(b,d)$  &
+					\cellcolor{applegreen!50}  $(b,e)$  &
+					\cellcolor{lightgray} $ \leftarrow F_{2} $ \\
+					\hline
+					\cellcolor{lightgray} c &
+					\cellcolor{applegreen!50}  $(c,a)$  &
+					\cellcolor{applegreen!50}  $(c,b)$  &
+					\cellcolor{applegreen!50}  $(c,c)$  &
+					\cellcolor{bosunired!50}   $(c,d)$  &
+					\cellcolor{bosunired!50}   $(c,e)$  &
+					\cellcolor{lightgray} $ \leftarrow F_{3} $ \\
+					\hline
+					\cellcolor{lightgray} d &
+					\cellcolor{applegreen!50}  $(d,a)$  &
+					\cellcolor{applegreen!50}  $(d,b)$  &
+					\cellcolor{bosunired!50}   $(d,c)$  &
+					\cellcolor{applegreen!50}  $(d,d)$  &
+					\cellcolor{bosunired!50}   $(d,e)$  &
+					\cellcolor{lightgray} $ \leftarrow F_{4} $ \\
+					\hline
+					\cellcolor{lightgray} e &
+					\cellcolor{applegreen!50}  $(e,a)$  &
+					\cellcolor{applegreen!50}  $(e,b)$  &
+					\cellcolor{bosunired!50}   $(e,c)$  &
+					\cellcolor{bosunired!50}   $(e,d)$  &
+					\cellcolor{applegreen!50}  $(e,e)$  &
+					\cellcolor{black} \:\: \\
+					\hline
+					\cellcolor{black} \:\: &
+					\cellcolor{lightgray}  $ \uparrow F_{1} $  &
+					\cellcolor{lightgray}  $ \uparrow F_{2} $  &
+					\cellcolor{lightgray}  $ \uparrow F_{3} $  &
+					\cellcolor{lightgray}  $ \uparrow F_{4} $  &
+					\cellcolor{black} \:\:  &
+					\cellcolor{applegreen!50} $ \nwarrow F_{0} $ \\
+					\hline			
+				\end{tabular}
+			\end{center}
+		\end{table}	
+		
+		\noindent
+		$WSP_{R_{3}} = F_{0} \cup F_{1} \cup  F_{2}$ \\
+		$NWSP_{R_{3}} = F_{3} \cup F_{4}$\\
+		$QRE_{R_{3}} = Card(NWSP) = Card(F_{3}) +  Card(F_{4})= 4+2= 6 $
+		\\\\
+		
+		\newpage
+		
+		\noindent
+		$R_{4}: DOMAIN \rightarrow O_{4}=\{6,7,8,9\}$\\\\
+		\begin{table}[h!]
+			\begin{center}
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					a & b & c & d & e \\
+					\hline
+					6 & 7 & 8 & 9 & 9 \\
+					\hline
+				\end{tabular}
+			\end{center}
+		\end{table}
+		
+		\noindent
+		From the perspective of D-pairs:\\\\
+		\begin{table}[h!]
+			\begin{center}
+				\begin{tabular}{|l|c|c|c|c|c|r|}
+					\hline
+					\cellcolor{applegreen!50} $ \searrow F_{0} $ &
+					\cellcolor{lightgray} a &
+					\cellcolor{lightgray} b &
+					\cellcolor{lightgray} c &
+					\cellcolor{lightgray} d &
+					\cellcolor{lightgray} e &
+					\cellcolor{lightgray!50} Families \\
+					\hline
+					\cellcolor{lightgray} a &
+					\cellcolor{applegreen!50}  $(a,a)$  &
+					\cellcolor{applegreen!50}  $(a,b)$  &
+					\cellcolor{applegreen!50}  $(a,c)$  &
+					\cellcolor{applegreen!50}  $(a,d)$  &
+					\cellcolor{applegreen!50}  $(a,e)$  &
+					\cellcolor{lightgray} $ \leftarrow F_{1} $ \\
+					\hline
+					\cellcolor{lightgray} b &
+					\cellcolor{applegreen!50}  $(b,a)$  &
+					\cellcolor{applegreen!50}  $(b,b)$  &
+					\cellcolor{applegreen!50}  $(b,c)$  &
+					\cellcolor{applegreen!50}  $(b,d)$  &
+					\cellcolor{applegreen!50}  $(b,e)$  &
+					\cellcolor{lightgray} $ \leftarrow F_{2} $ \\
+					\hline
+					\cellcolor{lightgray} c &
+					\cellcolor{applegreen!50}  $(c,a)$  &
+					\cellcolor{applegreen!50}  $(c,b)$  &
+					\cellcolor{applegreen!50}  $(c,c)$  &
+					\cellcolor{applegreen!50}  $(c,d)$  &
+					\cellcolor{applegreen!50}  $(c,e)$  &
+					\cellcolor{lightgray} $ \leftarrow F_{3} $ \\
+					\hline
+					\cellcolor{lightgray} d &
+					\cellcolor{applegreen!50}  $(d,a)$  &
+					\cellcolor{applegreen!50}  $(d,b)$  &
+					\cellcolor{applegreen!50}  $(d,c)$  &
+					\cellcolor{applegreen!50}  $(d,d)$  &
+					\cellcolor{bosunired!50}   $(d,e)$  &
+					\cellcolor{lightgray} $ \leftarrow F_{4} $ \\
+					\hline
+					\cellcolor{lightgray} e &
+					\cellcolor{applegreen!50}  $(e,a)$  &
+					\cellcolor{applegreen!50}  $(e,b)$  &
+					\cellcolor{applegreen!50}  $(e,c)$  &
+					\cellcolor{bosunired!50}   $(e,d)$  &
+					\cellcolor{applegreen!50}  $(e,e)$  &
+					\cellcolor{black} \:\: \\
+					\hline
+					\cellcolor{black} \:\: &
+					\cellcolor{lightgray}  $ \uparrow F_{1} $  &
+					\cellcolor{lightgray}  $ \uparrow F_{2} $  &
+					\cellcolor{lightgray}  $ \uparrow F_{3} $  &
+					\cellcolor{lightgray}  $ \uparrow F_{4} $  &
+					\cellcolor{black} \:\:  &
+					\cellcolor{applegreen!50} $ \nwarrow F_{0} $ \\
+					\hline			
+				\end{tabular}
+			\end{center}
+		\end{table}	
+		
+		\noindent
+		$WSP_{R_{4}} = F_{0} \cup F_{1} \cup  F_{2} \cup F_{3}$\\
+		$NWSP_{R_{4}} = F_{4}$\\
+		$QRE_{R_{4}} = Card(NWSP) = Card(F_{4})= 2 $
+		\\\\
+		
+		\newpage
+		
+		\noindent
+		$R_{5}: DOMAIN \rightarrow O_{5}=\{10,11,12,13,14\}$\\\\
+		\begin{table}[h!]
+			\begin{center}
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					a & b & c & d & e \\
+					\hline
+					10 & 11 & 12 & 13 & 14 \\
+					\hline
+				\end{tabular}
+			\end{center}
+		\end{table}
+		
+		\noindent
+		From the perspective of D-pairs:\\\\
+		\begin{table}[h!]
+			\begin{center}
+				\begin{tabular}{|l|c|c|c|c|c|r|}
+					\hline
+					\cellcolor{applegreen!50} $ \searrow F_{0} $ &
+					\cellcolor{lightgray} a &
+					\cellcolor{lightgray} b &
+					\cellcolor{lightgray} c &
+					\cellcolor{lightgray} d &
+					\cellcolor{lightgray} e &
+					\cellcolor{lightgray!50} Families \\
+					\hline
+					\cellcolor{lightgray} a &
+					\cellcolor{applegreen!50}  $(a,a)$  &
+					\cellcolor{applegreen!50}  $(a,b)$  &
+					\cellcolor{applegreen!50}  $(a,c)$  &
+					\cellcolor{applegreen!50}  $(a,d)$  &
+					\cellcolor{applegreen!50}  $(a,e)$  &
+					\cellcolor{lightgray} $ \leftarrow F_{1} $ \\
+					\hline
+					\cellcolor{lightgray} b &
+					\cellcolor{applegreen!50}  $(b,a)$  &
+					\cellcolor{applegreen!50}  $(b,b)$  &
+					\cellcolor{applegreen!50}  $(b,c)$  &
+					\cellcolor{applegreen!50}  $(b,d)$  &
+					\cellcolor{applegreen!50}  $(b,e)$  &
+					\cellcolor{lightgray} $ \leftarrow F_{2} $ \\
+					\hline
+					\cellcolor{lightgray} c &
+					\cellcolor{applegreen!50}  $(c,a)$  &
+					\cellcolor{applegreen!50}  $(c,b)$  &
+					\cellcolor{applegreen!50}  $(c,c)$  &
+					\cellcolor{applegreen!50}  $(c,d)$  &
+					\cellcolor{applegreen!50}  $(c,e)$  &
+					\cellcolor{lightgray} $ \leftarrow F_{3} $ \\
+					\hline
+					\cellcolor{lightgray} d &
+					\cellcolor{applegreen!50}  $(d,a)$  &
+					\cellcolor{applegreen!50}  $(d,b)$  &
+					\cellcolor{applegreen!50}  $(d,c)$  &
+					\cellcolor{applegreen!50}  $(d,d)$  &
+					\cellcolor{applegreen!50}  $(d,e)$  &
+					\cellcolor{lightgray} $ \leftarrow F_{4} $ \\
+					\hline
+					\cellcolor{lightgray} e &
+					\cellcolor{applegreen!50}  $(e,a)$  &
+					\cellcolor{applegreen!50}  $(e,b)$  &
+					\cellcolor{applegreen!50}  $(e,c)$  &
+					\cellcolor{applegreen!50}  $(e,d)$  &
+					\cellcolor{applegreen!50}  $(e,e)$  &
+					\cellcolor{black} \:\: \\
+					\hline
+					\cellcolor{black} \:\: &
+					\cellcolor{lightgray}  $ \uparrow F_{1} $  &
+					\cellcolor{lightgray}  $ \uparrow F_{2} $  &
+					\cellcolor{lightgray}  $ \uparrow F_{3} $  &
+					\cellcolor{lightgray}  $ \uparrow F_{4} $  &
+					\cellcolor{black} \:\:  &
+					\cellcolor{applegreen!50} $ \nwarrow F_{0} $ \\
+					\hline			
+				\end{tabular}
+			\end{center}
+		\end{table}	
+		
+		\noindent
+		$WSP_{R_{5}} = F_{0} \cup F_{1} \cup  F_{2} \cup F_{3} \cup F_{4}$\\
+		$NWSP_{R_{5}} = \emptyset$\\
+		$QRE_{R_{5}} = Card(NWSP) = 0 $
+		\\\\
+		
+		\noindent
+		$QRE=0$ or $NWSP=\emptyset$ means the same in finite or INFINITE cardinals: we don't have UNSOLVED D-pairs. It means a perfect inyectivity OR we have achieved the conditions of the Naive CA Theorem.
+		\\\\
+		
+		\noindent
+		Between $O_{4}$ and $O_{5}$ we have a $QRE=2$ unsolvable: if DOMAIN has 5 elements, and IMAGE has 4 elements, MUST BE IMPOSSIBLE to solve ALL D-pairs with disjoint images( remember that injectivity is a special very simple case of NAIVE CA Th. ). The more variety we have in the IMAGE set, it is more easy to solve more and more D-pairs. D-pairs solved are a NOT SO AMBIGUOS way to measure the quantity of elements inside IMAGE set, in an indirect way. The more elements we had got, QRE becomes smaller and smaller.
+		\\\\
+		
+		
+		\newpage
+		\noindent
+		Let me sumarize the five D-pairs tables:
+	
+		\begin{table}[h!]
+			\begin{center}
+				\begin{tabular}{|c|c|c|c|c|c|c|}
+				\hline
+					\cellcolor{lightgray!50} Summary  &
+					\cellcolor{lightgray} $F_{0}$     &
+					\cellcolor{lightgray} $F_{1}$     &
+					\cellcolor{lightgray} $F_{2}$     &
+					\cellcolor{lightgray} $F_{3}$     &
+					\cellcolor{lightgray} $F_{4}$     &
+					\cellcolor{lightgray!50} QRE      \\
+				\hline
+					\cellcolor{lightgray} $R_{1}$     &
+					\cellcolor{applegreen!50} $\:\:$  &
+					\cellcolor{bosunired!50}  $\:\:$  &
+					\cellcolor{bosunired!50}  $\:\:$  &
+					\cellcolor{bosunired!50}  $\:\:$  &
+					\cellcolor{bosunired!50}  $\:\:$  &
+					20 \\
+				\hline
+					\cellcolor{lightgray} $R_{2}$     &
+					\cellcolor{applegreen!50} $\:\:$  &
+					\cellcolor{applegreen!50} $\:\:$  &
+					\cellcolor{bosunired!50}  $\:\:$  &
+					\cellcolor{bosunired!50}  $\:\:$  &
+					\cellcolor{bosunired!50}  $\:\:$  &
+					12 \\
+				\hline
+					\cellcolor{lightgray} $R_{3}$     &
+					\cellcolor{applegreen!50} $\:\:$  &
+					\cellcolor{applegreen!50} $\:\:$  &
+					\cellcolor{applegreen!50} $\:\:$  &
+					\cellcolor{bosunired!50}  $\:\:$  &
+					\cellcolor{bosunired!50}  $\:\:$  &
+					6 \\
+				\hline
+					\cellcolor{lightgray} $R_{4}$     &
+					\cellcolor{applegreen!50} $\:\:$  &
+					\cellcolor{applegreen!50} $\:\:$  &
+					\cellcolor{applegreen!50} $\:\:$  &
+					\cellcolor{applegreen!50}  $\:\:$  &
+					\cellcolor{bosunired!50}  $\:\:$  &
+					2 \\
+				\hline
+					\cellcolor{lightgray} $R_{5}$     &
+					\cellcolor{applegreen!50} $\:\:$  &
+					\cellcolor{applegreen!50} $\:\:$  &
+					\cellcolor{applegreen!50} $\:\:$  &
+					\cellcolor{applegreen!50}  $\:\:$  &
+					\cellcolor{applegreen!50}  $\:\:$  &
+					0 \\
+				\hline
+				\end{tabular}
+			\end{center}
+		\end{table}
+		
+		\noindent
+		We have not mention the cardinal of the DOMAIN or ORIGIN set, in this last table.
+		\\\\
+		
+		\noindent
+		We have copied the semi-xmas-tree pattern, but now from the perspective of D-pairs:\\
+		$S_{1} \: = \: NWSP_{R_{1}} \: = \: F_{1} \: \cup \: F_{2} \: \cup \: F_{3} \: \cup \: F_{4} $ \\
+		$S_{2} \: = \: NWSP_{R_{2}} \: = \: F_{2} \: \cup \: F_{3} \: \cup \: F_{4} $                  \\
+		$S_{3} \: = \: NWSP_{R_{3}} \: = \: F_{3} \: \cup \: F_{4} $                                   \\
+		$S_{4} \: = \: NWSP_{R_{4}} \: = \: F_{4} $                                                    \\
+		$S_{5} \: = \: NWSP_{R_{5}} \: = \: \emptyset $                                                \\
+		$S_{1} \: \cap \: S_{2} \: \cap \: S_{3} \: \cap \: S_{4} \: \cap \: S_{5} \: = \emptyset $
+		\\\\
+		
+		\noindent
+		Thanks to the intersection of all (nested) NWSP sets, of each relation, being empty, WE KNOW we have "shadowed" ALL DOMAIN.
+		\\\\
+		
+		\noindent
+		Each relation, to being able to solve certain quantity of Families of D-pairs, needs ENOUGH ELEMENTS inside each IMAGE set. You can improve each relation, but as they are, we have:\\
+		1) Defined each relation WELL and COMPLETELY.\\
+		2) Proven they can exist.
+		\\\\
+		
+		\noindent
+		We have too, an uncertain list of growing quantities, proven by the existance of each relations and their hability to solve D-pairs. The last relation is not the unique interesting one. THE REST, existing, let us see a pattern very similar to when we need inside ORIGIN, MUCH MORE ELEMENTS THAN INSIDE DOMAIN. But instead to create each subset, each LLB, to create each disjoint IMAGE set of each relation.
+		\\\\
+		
+		\noindent
+		To being able to build this TPI in finite spectrum, we needed 15 inside ORIGIN, to being able to create ALL relations properly. Inside DOMAIN there is only 5.
+		\\\\
+		
+		\noindent
+		We have done it without using the word "cardinal". We need "to count" Families, but that is much more different than "counting" elements from DOMAIN or ORIGIN.
+		\\\\
+		
+		\newpage
+		\noindent
+		FOR YOU, before knowing this work, D-pairs and isolated elements from DOMAIN, should behave in a similar way. THE PROBLEM is that the prove of the theorem of Cantor PROVED that an injectivity:\\\\
+		$f: SNEIs \rightarrow LCF_{2p}$\\\\
+		Must be impossible, BUT a TPI is absolutely possible. They do not behave always the same. AND THAT IS A MATHEMATICAL FACT. Before seeing the proper definition of a TPI for infinite cardinals, recheck the system of relations $r_{\theta_{k}}$:{\ref{tab: system_relations_r_theta_k}
+		\\\\
+		
+		\noindent
+		In the system of relations $r_{\theta_{k}}$ and in this finite example, we have the STEPS, measured in Families of D-pairs. They are not the same Families, but in both cases, thanks to Families, we can define STEPS, without using the word "cardinal".
+		\\\\
 		
 		
 		
