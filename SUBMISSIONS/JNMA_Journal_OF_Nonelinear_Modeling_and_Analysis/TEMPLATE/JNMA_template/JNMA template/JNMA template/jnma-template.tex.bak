@@ -1,0 +1,265 @@
+\documentclass{jnma}
+\def\currentvolume{*}
+\def\currentissue{*}
+\def\currentyear{*}
+\def\currentmonth{*}
+\def\doi{10.12150/jnma.\currentyear.\firstpage}
+\def\received{*}
+\def\revised{*}
+\def\accepted{*}
+\firstpage{1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  The above is inserted by publisher. %%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%   The following packages have been used in this template. %%%%%%%%%%%%%%%%%%
+%\usepackage{amsmath}
+%\usepackage{amsthm}
+%\usepackage{amssymb}
+%\usepackage{graphicx}
+%\usepackage{cite}
+%\usepackage{epsfig}
+%\usepackage[normal]{subfigure}
+%\usepackage{paralist}
+%\usepackage{caption2}
+%\usepackage{hyperref}
+%%%%%%%%%%%%%%%%%%%%%%%  Please state your own packages below. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{}
+%\usepackage{}
+%\usepackage{}
+%\graphicspath{{figures/}}
+%\usepackage{showkeys}
+%\usepackage{refcheck}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%          The following are editted        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%               by the author.              %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\shorttitle{The shorttitle of your paper. It is up to 40 characters}
+
+
+\def\shortauthor{A. Author,  B. Author \& C. Author}
+
+
+\title{Please Put Your Paper Title Here}
+
+\author{ A** Author$^{1,\dag}$, B** Author$^2$ and C** Author$^2$}%%%%%%%%  Here is the full name of every author. %%%%%%%%%%%%%%%%%%
+
+\date{}
+
+
+\begin{document}
+\baselineskip 12pt
+
+\maketitle
+\begin{abstract}
+Here is the  content of your abstract. It should not contain any displayed equations.
+\end{abstract}
+
+\begin{keyword}
+A list of 3-5 keywords are to be supplied.(Use comma ``," to separate each one and capitalize the first letter of the first word only.)
+\end{keyword}
+
+\begin{MSC}
+**, **.
+(This is the 2010 Mathematics Subject Classification of your paper. Use comma ``," to separate each one.)
+\end{MSC}
+
+
+\thispagestyle{first}\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\footnotetext{\hspace*{-5mm}
+\renewcommand{\arraystretch}{1}
+\begin{tabular}{@{}r@{}p{10cm}@{}}
+$^\dag$& the corresponding author. \\
+&Email address:**@***.**(A. Author), **@***.**(B. Author),**@***.**(C. Author)\\
+$^1$&Department, University, Street, Postal-Code City, Country\\
+$^2$&Laboratory, Institute, Street, Postal-Code City, Country\\
+$^*$& The authors were supported by Natural Science and Engineering Resaerch Council Canada (****) and National Natural Science Foundation of
+China (*****).
+\end{tabular}}
+
+\vspace{-2mm}
+
+
+\section{Introduction}
+Please prepare your tex file according to the following introduction
+very closely. You need to check your manuscript carefully before you submit it. Thank you.
+
+
+\section{The example of inserting a figure}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.25]{fig1.eps}
+\caption {The caption of your figure. You could insert a *.eps or a *.pdf figure here. }\label{fig1}
+\end{figure}
+
+
+\section{The  format of Theorem, Lemma, Proof and etc.}
+\subsection{Theorem and Lemma}
+ \noindent{\bf 1. Input:}
+\begin{verbatim}
+\begin{theorem}\label{th1}
+ Please state your theorem here.
+ \end{theorem}
+% `th1' is the label name of this theorem.
+ \end{verbatim}
+
+ \noindent{\bf Output:}
+ \begin{theorem}\label{th1}
+Please state your theorem here.
+\end{theorem}
+
+\medskip
+\noindent{\bf 2. Input:}
+\begin{verbatim}
+\begin{lemma}[Lemma 2, \cite{H2013}]\label{le1}
+ Please state your lemma here. The format of item is as follows:
+\begin{enumerate}[(i)]
+\item the first item;
+\item the second item.
+\end{enumerate}
+\end{lemma}
+ \end{verbatim}
+
+ \noindent{\bf Output:}
+ \begin{lemma}[Lemma 2, \cite{H2013}]
+ \label{le1}
+  Please state your lemma here. The format of item is as follows:
+\begin{enumerate}[(i)]
+\item the first item;
+\item the second item.
+\end{enumerate}
+\end{lemma}
+
+ \subsection{Proof}
+\noindent{\bf Input:}
+
+\begin{verbatim}
+\begin{proof}
+Please state your proof here.
+\end{proof}
+ \end{verbatim}
+
+ \noindent{\bf Output:}
+
+\begin{proof}
+Please state your proof here.
+\end{proof}
+
+
+\subsection{The format of Definition, Remark,  Corollary and Example}
+\begin{definition}\label{de1} Please state your definition here.\end{definition}
+
+\begin{remark}\label{re1} Content of your remark.\end{remark}
+
+\begin{example}\label{ex1}Content of your example.\end{example}
+
+\begin{notation}\label{re1} Content of your remark.\end{notation}
+
+\begin{corollary}\label{co1}Content of your corollary.\end{corollary}
+
+\begin{proposition} Content of your proposition. \end{proposition}
+
+\begin{conjecture}Content of your conjecture. \end{conjecture}
+
+\begin{problem}Content of your problem. \end{problem}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Here is the example of math formulas      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{The example of the math formulas}
+Please align your math formulas as follows:
+\begin{align*}
+M^{\pm}(h,\delta)&={\widetilde{M}}^{\pm}(h,\delta)+{g}^{\pm}(0,0,\delta)\int_{L_h^{\pm}}dx-{f}^{\pm}(0,0,\delta)\int_{L_h^{\pm}}dy\\
+&=\int_{L_h^{\pm}}{\widetilde{g}}^{\pm}dx-{\widetilde{f}}^{\pm}dy+{g}^{\pm}(0,0,\delta)\int_{L_h^{\pm}}dx-{f}^{\pm}(0,0,\delta)\int_{L_h^{\pm}}dy.
+\end{align*}
+
+
+
+Here is an example if the math expression exceeds one line:
+\begin{align}
+{M}(h,\delta)=&2e_1{f}(0,0,\delta)h^{\frac{1}{2}}+\sum\limits_{j\geq2}m_{j-1}(\delta)h^{\frac{j}{2}}+[\varphi(-h^{\frac{j}{2}})-\varphi(h^{\frac{j}{2}})] \notag\\
+&+\sum\limits_{j\geq1}((-1)^j-1)e_jh^{\frac{j}{2}} \label{eq1}
+\end{align}
+
+For more than one equation:
+\begin{align*}
+&\widetilde{f}^{\pm}(x,y,\delta)={f}^{\pm}(x,y,\delta)-{f}^{\pm}(0,0,\delta),\\
+&\widetilde{g}^{\pm}(x,y,\delta)={g}^{\pm}(x,y,\delta)-{g}^{\pm}(0,0,\delta).
+\end{align*}
+
+
+\section{How to cite theorem, lemma and equation in the paper}
+
+You need to {\bf label} the theorem, lemma and equation of this article first. Then \\
+
+An example of label: ~~~~~~~~~Theorem \ref{th1} is labeled as {\bf th1}. \\
+
+Another example of label: ~~~The equation \eqref{eq1} is labeled as {\bf eq1}.
+
+\section*{Acknowledgements}
+We would like to thank you to typeset your article according the above style very closely in
+advance.
+
+
+\section*{The format of citation}
+\noindent {\bf Input:}
+\begin{verbatim}
+An example of book citation is Han \cite{H2013}.
+An example of article citation is  Imran etc \cite[p11]{yang2018}
+ (if more than two co-authors).
+More citations: \cite{H2013,yang2018,han-xiong}
+ (if more than two references)
+ \end{verbatim}
+
+\vskip 2mm
+\noindent {\bf Output:}
+\vskip 2mm
+\noindent An example of book citation is Han \cite{H2013}. \\
+An example of article citation is  Yang etc \cite[p11]{yang2018}
+ (if more than two co-authors).\\
+More citations: \cite{H2013,yang2018,han-xiong} (if more than two references).
+
+\section*{The format of references}
+A complete list of references cited, arranged in alphabetical order according to the surname of the first
+author, should be provided. The first and middle name are listed in abbreviation form.
+
+\vskip 3mm
+\noindent{\em 1. Book reference:}
+\vskip 2mm
+\noindent name1 and name2,  {\em Name of The Book}, Publisher, address, year.
+
+\vskip 3mm
+\noindent {\em 2. Journal reference~(Capitalize the first letter of the first word of paper title only):}
+\vskip 2mm
+\noindent name1, name2 and name3, {\em Name of the paper}, Name of The Journal, Year, Vol(No), firstpage--lastpage.\par
+\vskip 2mm
+\noindent{\em 3. Article without volume and number:}\par
+\vskip 2mm
+\noindent name1, name2 and name3, {\em Name of the paper}, Name of The Journal, Year. \\
+DOI: doi number.
+
+
+%\bibliographystyle{jnmabib}
+%\bibliography{bibsample}% Here is the name of your BibTex database file.
+
+Authors are advised to use a BibTeX database file for their reference list.
+ It can also be listed in the main tex file as follows:
+
+\begin{thebibliography}{99}
+\bibitem{H2013}
+M. Han,  {\em Bifurcation Theory of Limit Cycles}, Science Press, Beijing, 2013.
+
+\bibitem{han-xiong}
+M. Han and Y. Xiong, {\em Limit cycle bifurcations in a class of near-
+Hamiltonian systems with multiple parameters}, Chaos Solitons Fractals, 2014. \\
+DOI:~10.1016/j.chaos.2014.07.005
+
+
+\bibitem{yang2018}
+J. Yang, P. Yu and X. Sun, {\em On the independent perturbation parameters and the number of limit cycles of a type of Lienard system}, Journal of Mathematical Analysis and Applications, 2018, 464(1),  679--692.
+
+
+
+\end{thebibliography}
+\end{document}
